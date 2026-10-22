@@ -1,0 +1,12 @@
+{"commands": [
+  {"command": "sketch.create", "params": {"plane": "XY"}},
+  {"command": "sketch.rectangle.center",
+   "params": {"center": [0, 0], "corner": [40, 30]}},
+  {"command": "sketch.finish", "params": {}},
+  {"command": "solid.extrude", "params": {"distance": 30}},
+  {"command": "solid.shell",
+   "params": {"faces": [[0, 0, 30]], "thickness": 2}},
+  {"command": "solid.fillet",
+   "params": {"radius": 10, "edges": [[40, 30, 15],
+     [-40, 30, 15], [-40, -30, 15], [40, -30, 15]]}}
+]}

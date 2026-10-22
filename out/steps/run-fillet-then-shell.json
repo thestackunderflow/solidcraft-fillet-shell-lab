@@ -1,0 +1,13 @@
+{
+ "argv": [
+  "solidcraft-cli",
+  "run",
+  "steps/fillet-then-shell.json",
+  "--out",
+  "out/steps/run-fillet-then-shell.stl"
+ ],
+ "exit": 0,
+ "stdout": "{\n  \"bodies\": [\n    {\n      \"area_mm2\": 24320.53346416112,\n      \"bbox\": {\n        \"max\": [\n          40.00000000000001,\n          30.000000000000007,\n          30.00000000000002\n        ],\n        \"min\": [\n          -40.00000000000001,\n          -30.0,\n          -6.661338147750939e-15\n        ]\n      },\n      \"center_of_mass\": [\n        -4.198480165975052e-14,\n        1.18802524084674e-14,\n        10.056598859700559\n      ],\n      \"density_g_cm3\": 1.29,\n      \"edges\": 48,\n      \"face_types\": {\n        \"cylinder\": 8,\n        \"plane\": 11\n      },\n      \"faces\": 19,\n      \"kernel\": {\n        \"edges\": 48,\n        \"faces\": 19,\n        \"shells\": 1,\n        \"vertices\": 32\n      },\n      \"mass_g\": 30.69567919688577,\n      \"material\": \"Default\",\n      \"name\": \"Body1\",\n      \"vertices\": 32,\n      \"volume_mm3\": 23795.100152624625\n    }\n  ],\n  \"body_count\": 1,\n  \"total\": {\n    \"area_mm2\": 24320.53346416112,\n    \"edges\": 48,\n    \"faces\": 19,\n    \"mass_g\": 30.69567919688577,\n    \"vertices\": 32,\n    \"volume_mm3\": 23795.100152624625\n  }\n}",
+ "stderr": "",
+ "stl_written": true
+}

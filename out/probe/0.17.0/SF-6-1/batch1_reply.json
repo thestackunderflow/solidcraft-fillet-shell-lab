@@ -1,0 +1,111 @@
+{
+ "isError": false,
+ "body": {
+  "completed": 5,
+  "ok": true,
+  "results": [
+   {
+    "attachment": "fixed",
+    "created": {
+     "constraints": [],
+     "curves": [],
+     "dimensions": [],
+     "points": []
+    },
+    "name": "Sketch1",
+    "projected": null,
+    "sketch": 1
+   },
+   {
+    "constraints": [
+     "k1",
+     "k2",
+     "k3",
+     "k4",
+     "k5",
+     "k6"
+    ],
+    "corners": {
+     "bottom_left": "p1",
+     "bottom_right": "p2",
+     "top_left": "p4",
+     "top_right": "p3"
+    },
+    "created": {
+     "constraints": [
+      "k1",
+      "k2",
+      "k3",
+      "k4",
+      "k5",
+      "k6"
+     ],
+     "curves": [
+      "l1",
+      "l2",
+      "l3",
+      "l4",
+      "l5",
+      "l6"
+     ],
+     "dimensions": [],
+     "points": [
+      "p1",
+      "p2",
+      "p3",
+      "p4",
+      "p5"
+     ]
+    },
+    "curves": [
+     "l1",
+     "l2",
+     "l3",
+     "l4"
+    ],
+    "sides": {
+     "bottom": "l1",
+     "left": "l4",
+     "right": "l2",
+     "top": "l3"
+    },
+    "sketch": {
+     "dof": 2,
+     "solved": true
+    }
+   },
+   {
+    "profiles": 1,
+    "sketch": 1
+   },
+   {
+    "bodies": [
+     "Body1"
+    ],
+    "changed_bodies": [],
+    "created_bodies": [
+     "Body1"
+    ],
+    "feature": 2,
+    "ms": 3.307334,
+    "name": "Extrude1",
+    "removed_bodies": [],
+    "warning": null
+   },
+   {
+    "bodies": [
+     "Body1"
+    ],
+    "changed_bodies": [
+     "Body1"
+    ],
+    "created_bodies": [],
+    "feature": 3,
+    "ms": 28.900341,
+    "name": "Shell1",
+    "removed_bodies": [],
+    "warning": null
+   }
+  ]
+ }
+}

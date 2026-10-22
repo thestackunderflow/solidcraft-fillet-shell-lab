@@ -1,0 +1,51 @@
+{
+ "bodies": [
+  {
+   "area_mm2": 25091.487043228048,
+   "bbox": {
+    "max": [
+     40.0,
+     30.0,
+     30.000000000000014
+    ],
+    "min": [
+     -40.0,
+     -30.0,
+     -9.925061906125441e-16
+    ]
+   },
+   "center_of_mass": [
+    -1.0428128586046064e-14,
+    1.6043274747763173e-15,
+    10.07321308051536
+   ],
+   "density_g_cm3": 1.29,
+   "edges": 36,
+   "face_types": {
+    "cylinder": 4,
+    "plane": 11
+   },
+   "faces": 15,
+   "kernel": {
+    "edges": 36,
+    "faces": 15,
+    "shells": 1,
+    "vertices": 24
+   },
+   "mass_g": 31.202225962353083,
+   "material": "Default",
+   "name": "Body1",
+   "vertices": 24,
+   "volume_mm3": 24187.7720638396
+  }
+ ],
+ "body_count": 1,
+ "total": {
+  "area_mm2": 25091.487043228048,
+  "edges": 36,
+  "faces": 15,
+  "mass_g": 31.202225962353083,
+  "vertices": 24,
+  "volume_mm3": 24187.7720638396
+ }
+}

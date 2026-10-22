@@ -1,0 +1,7 @@
+SolidCraft 0.17.0 · 80 x 60 x 30, wall 2
+corner wall at z = 15     STL     SolidCraft
+round first, R10        2.0000    2.0000
+shell first, R6         0.3431    0.3431
+shell first, R6.82      0.0035    0.0035
+volume R10 23795.10 mm3
+hand count 23795.04 (+0.0002%)

@@ -1,0 +1,95 @@
+{
+ "triangles": 2548,
+ "bbox_min": [
+  -40.0,
+  -30.0,
+  0.0
+ ],
+ "bbox_max": [
+  40.0,
+  30.0,
+  30.0
+ ],
+ "size": [
+  80.0,
+  60.0,
+  30.0
+ ],
+ "volume_mm3": 24291.122,
+ "corner_wall": {
+  "status": "OK",
+  "wall_mm": 2.0,
+  "straight_wall_mm": 2.0,
+  "z": 15.0,
+  "corners": [
+   {
+    "corner": [
+     1,
+     1
+    ],
+    "r_fit": 6.0,
+    "centre": [
+     34.0,
+     24.0
+    ],
+    "inner": "round",
+    "r_in_fit": 4.0,
+    "arc_vertices": 15,
+    "wall_mm": 2.0,
+    "raw_polyline_mm": 1.9973,
+    "sagitta_mm": 0.008
+   },
+   {
+    "corner": [
+     -1,
+     1
+    ],
+    "r_fit": 6.0,
+    "centre": [
+     -34.0,
+     24.0
+    ],
+    "inner": "round",
+    "r_in_fit": 4.0,
+    "arc_vertices": 15,
+    "wall_mm": 2.0,
+    "raw_polyline_mm": 1.9973,
+    "sagitta_mm": 0.008
+   },
+   {
+    "corner": [
+     -1,
+     -1
+    ],
+    "r_fit": 6.0,
+    "centre": [
+     -34.0,
+     -24.0
+    ],
+    "inner": "round",
+    "r_in_fit": 4.0,
+    "arc_vertices": 15,
+    "wall_mm": 2.0,
+    "raw_polyline_mm": 1.9973,
+    "sagitta_mm": 0.008
+   },
+   {
+    "corner": [
+     1,
+     -1
+    ],
+    "r_fit": 6.0,
+    "centre": [
+     34.0,
+     -24.0
+    ],
+    "inner": "round",
+    "r_in_fit": 4.0,
+    "arc_vertices": 15,
+    "wall_mm": 2.0,
+    "raw_polyline_mm": 1.9973,
+    "sagitta_mm": 0.008
+   }
+  ]
+ }
+}

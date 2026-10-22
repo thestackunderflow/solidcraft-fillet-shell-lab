@@ -1,0 +1,44 @@
+[
+ {
+  "id": "toolcall-1-refused",
+  "tool": "batch",
+  "src": "out/steps/batch-shell-then-fillet.jsonl#L7",
+  "args": "{\"command\":\"solid.fillet\",\"params\":{\"radius\":10,\"edges\":[[40,30,15],[-40,30,15],[-40,-30,15],[40,-30,15]]}}",
+  "args_note": "commands[5] of 6 (the failing step)",
+  "result": "ok: false · failed.command solid.fillet",
+  "also": {
+   "rolled_back": true,
+   "undone": 5,
+   "failed.index": 5
+  }
+ },
+ {
+  "id": "toolcall-3-built",
+  "tool": "batch",
+  "src": "out/steps/batch-fillet-then-shell.jsonl#L7",
+  "args": "{\"command\":\"solid.fillet\",\"params\":{\"radius\":10,\"edges\":[[40,30,15],[-40,30,15],[-40,-30,15],[40,-30,15]]}}",
+  "args_note": "commands[4] of 6",
+  "result": "ok: true · completed: 6"
+ },
+ {
+  "id": "toolcall-4-measure",
+  "tool": "measure",
+  "src": "out/probe/0.17.0/FS-10-1/measure.json",
+  "args": "{}",
+  "result": "volume_mm3: 23795.10"
+ },
+ {
+  "id": "toolcall-gob-sf6",
+  "tool": "batch",
+  "src": "out/probe/0.17.0/SF-6-1/batch2_reply.json",
+  "args": "{\"command\":\"solid.fillet\",\"params\":{\"edges\":[[40,30,15],[-40,30,15],[-40,-30,15],[40,-30,15]],\"radius\":6}}",
+  "result": "ok: true · warning: null"
+ },
+ {
+  "id": "toolcall-gob-offered",
+  "tool": "batch",
+  "src": "out/probe/0.17.0/SF-offered-1/batch2_reply.json",
+  "args": "{\"command\":\"solid.fillet\",\"params\":{\"edges\":[[40,30,15],[-40,30,15],[-40,-30,15],[40,-30,15]],\"radius\":6.82}}",
+  "result": "ok: true · warning: null"
+ }
+]

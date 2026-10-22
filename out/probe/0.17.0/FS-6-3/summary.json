@@ -1,0 +1,260 @@
+{
+ "cell": "FS-6",
+ "order": "FS",
+ "R": 6,
+ "rep": 3,
+ "version": "0.17.0",
+ "batch1": {
+  "isError": false,
+  "ok": true
+ },
+ "stage1_md5": "5f204ea2fa4444d2cfcfa1cc6c61bd39",
+ "batch2": {
+  "isError": false,
+  "ok": true,
+  "completed": 1,
+  "failed": null,
+  "rolled_back": null,
+  "undone": null,
+  "result_keys": [
+   "bodies",
+   "changed_bodies",
+   "created_bodies",
+   "feature",
+   "ms",
+   "name",
+   "removed_bodies",
+   "warning"
+  ],
+  "warning": null
+ },
+ "timeline_before": [
+  {
+   "name": "Sketch1",
+   "type": "Sketch",
+   "error": null,
+   "warning": null,
+   "suppressed": false,
+   "rolled_back": false
+  },
+  {
+   "name": "Extrude1",
+   "type": "ExtrudeFeature",
+   "error": null,
+   "warning": null,
+   "suppressed": false,
+   "rolled_back": false
+  },
+  {
+   "name": "Fillet1",
+   "type": "FilletFeature",
+   "error": null,
+   "warning": null,
+   "suppressed": false,
+   "rolled_back": false
+  }
+ ],
+ "timeline_after": [
+  {
+   "name": "Sketch1",
+   "type": "Sketch",
+   "error": null,
+   "warning": null,
+   "suppressed": false,
+   "rolled_back": false
+  },
+  {
+   "name": "Extrude1",
+   "type": "ExtrudeFeature",
+   "error": null,
+   "warning": null,
+   "suppressed": false,
+   "rolled_back": false
+  },
+  {
+   "name": "Fillet1",
+   "type": "FilletFeature",
+   "error": null,
+   "warning": null,
+   "suppressed": false,
+   "rolled_back": false
+  },
+  {
+   "name": "Shell1",
+   "type": "ShellFeature",
+   "error": null,
+   "warning": null,
+   "suppressed": false,
+   "rolled_back": false
+  }
+ ],
+ "timeline_unchanged": false,
+ "sc_volume_mm3": 24289.396020210213,
+ "final_md5": "c1d014191ce6085e1ea06830b6ac3577",
+ "export": {
+  "isError": false
+ },
+ "stl": {
+  "size": [
+   80.0,
+   60.0,
+   30.0
+  ],
+  "volume_mm3": 24291.122,
+  "wall_status": "OK",
+  "wall_mm": 2.0,
+  "corner_r_fit": [
+   6.0,
+   6.0,
+   6.0,
+   6.0
+  ],
+  "raw_polyline_mm": [
+   1.9973,
+   1.9973,
+   1.9973,
+   1.9973
+  ],
+  "sagitta_mm": [
+   0.008,
+   0.008,
+   0.008,
+   0.008
+  ]
+ },
+ "sc_wall": {
+  "cylinder_radii": [
+   4.0,
+   6.0
+  ],
+  "outer_face_radius": 5.999999999999963,
+  "items": [
+   {
+    "type": "face",
+    "body": "Body1",
+    "index": 4,
+    "point": [
+     34.54743659785502,
+     29.974973905493556,
+     12.862961532084
+    ]
+   },
+   {
+    "type": "face",
+    "body": "Body1",
+    "index": 12,
+    "point": [
+     34.36520280035867,
+     27.98329347583255,
+     17.553413608979504
+    ]
+   }
+  ],
+  "reply": {
+   "center_delta": [
+    -1.4210854715202004e-14,
+    -5.3290705182007514e-14,
+    0.0
+   ],
+   "center_distance": 5.51529477954916e-14,
+   "center_from": [
+    34.0,
+    24.000000000000036,
+    15.000000000000002
+   ],
+   "center_to": [
+    33.999999999999986,
+    23.999999999999982,
+    15.000000000000002
+   ],
+   "delta": [
+    -1.544102292405178,
+    -1.254316534571668,
+    -4.440892098500626e-16
+   ],
+   "distance_mm": 1.989362173740821,
+   "from": [
+    38.89208433727959,
+    27.443155548112514,
+    1.9999999999999993
+   ],
+   "items": [
+    {
+     "angle_deg": 90.0000000000003,
+     "arc_length": 9.424777960769353,
+     "area_mm2": 282.2865818424356,
+     "axis": [
+      0.0,
+      0.0,
+      -1.0
+     ],
+     "center": [
+      34.0,
+      24.000000000000036,
+      15.000000000000002
+     ],
+     "diameter": 11.999999999999925,
+     "planar": false,
+     "radius": 5.999999999999963,
+     "round": "cylinder",
+     "type": "face"
+    },
+    {
+     "angle_deg": 89.99999999999945,
+     "arc_length": 6.283185307179571,
+     "area_mm2": 175.64498425778135,
+     "axis": [
+      0.0,
+      0.0,
+      1.0
+     ],
+     "center": [
+      33.999999999999986,
+      23.999999999999982,
+      16.000000000000004
+     ],
+     "diameter": 8.00000000000003,
+     "planar": false,
+     "radius": 4.000000000000015,
+     "round": "cylinder",
+     "type": "face"
+    }
+   ],
+   "max": 30.85449724104713,
+   "max_delta": [
+    -5.999999999815394,
+    3.9999999999999964,
+    30.000000000000004
+   ],
+   "max_from": [
+    39.99999999999999,
+    24.0,
+    0.0
+   ],
+   "max_to": [
+    34.0000000001846,
+    27.999999999999996,
+    30.000000000000004
+   ],
+   "measure": "center",
+   "min": 1.989362173740821,
+   "to": [
+    37.34798204487441,
+    26.188839013540846,
+    1.999999999999999
+   ]
+  },
+  "min_mm": 1.989362173740821,
+  "radius_minus_axis_mm": 1.9999999999998925,
+  "sc_radii": [
+   5.999999999999963,
+   4.000000000000015
+  ],
+  "center_distance": 5.51529477954916e-14
+ },
+ "expected_volume": 24289.487,
+ "expected_wall": 2.0,
+ "stl_vs_expected_pct": 0.0067,
+ "sc_vs_expected_pct": -0.0004,
+ "wall_s": 0.4
+}

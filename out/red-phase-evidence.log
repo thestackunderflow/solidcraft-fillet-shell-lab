@@ -1,0 +1,44 @@
+..........FF.                                                            [100%]
+=================================== FAILURES ===================================
+____________ test_json_view_cards_fit_and_focus_the_captured_value _____________
+
+    def test_json_view_cards_fit_and_focus_the_captured_value():
+        cards = jload('video', 'json-cards.json')
+        assert cards
+        for c in cards:
+            path, line = c['src'].rsplit('#L', 1)
+            with open(P(path), encoding='utf-8') as f:
+                row = json.loads(f.read().split('\n')[int(line) - 1])
+            if 'view' in c:
+                sub = pointer(row, c['view']['at'])
+                if 'items' in c['view']:
+                    a, b = c['view']['items']
+                    sub = sub[a:b + 1]
+                rows = layout(sub, c['view']['cols'])
+                folds = 1 if 'items' in c['view'] and (c['view']['items'][0] > 0) else 0
+                assert c['view']['cols'] <= 44
+>               assert len(rows) + folds + 1 <= 12, (c['id'], len(rows))      # + the path row
+E               AssertionError: ('json-1b-fillet', 14)
+E               assert ((14 + 1) + 1) <= 12
+E                +  where 14 = len(['[', '  {', '    "command": "solid.fillet"', '    "params": {', '      "radius": 10', '      "edges": [', ...])
+
+tests/test_evidence.py:110: AssertionError
+________________________ test_panel_sources_are_pinned _________________________
+
+    def test_panel_sources_are_pinned():
+>       for s in jload('video', 'panel-sources.json')['sources']:
+
+tests/test_evidence.py:116: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+a = ('video', 'panel-sources.json')
+
+    def jload(*a):
+>       with open(P(*a), encoding='utf-8') as f:
+E       FileNotFoundError: [Errno 2] No such file or directory: '/work/tests/../video/panel-sources.json'
+
+tests/test_evidence.py:20: FileNotFoundError
+=========================== short test summary info ============================
+FAILED tests/test_evidence.py::test_json_view_cards_fit_and_focus_the_captured_value
+FAILED tests/test_evidence.py::test_panel_sources_are_pinned - FileNotFoundEr...
+2 failed, 11 passed in 2.04s

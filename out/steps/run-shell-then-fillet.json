@@ -1,0 +1,13 @@
+{
+ "argv": [
+  "solidcraft-cli",
+  "run",
+  "steps/shell-then-fillet.json",
+  "--out",
+  "out/steps/run-shell-then-fillet.stl"
+ ],
+ "exit": 1,
+ "stdout": "",
+ "stderr": "error: step 6 (solid.fillet): fillet: the rounds would leave openings in the surface (they overlap where a wall or a face is narrower than both); the largest radius that fits is 6.82 mm",
+ "stl_written": false
+}

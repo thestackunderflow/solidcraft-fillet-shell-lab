@@ -1,0 +1,92 @@
+{
+ "cell": "P4",
+ "rep": 1,
+ "version": "0.17.0",
+ "box": true,
+ "bosses": {
+  "ok": true,
+  "completed": 4,
+  "failed": null
+ },
+ "volume_after_bosses": 25406.437835698798,
+ "lip": {
+  "ok": true,
+  "completed": 1,
+  "failed": null
+ },
+ "timeline": [
+  {
+   "name": "Sketch1",
+   "type": "Sketch",
+   "error": null,
+   "warning": null,
+   "suppressed": false,
+   "rolled_back": false
+  },
+  {
+   "name": "Extrude1",
+   "type": "ExtrudeFeature",
+   "error": null,
+   "warning": null,
+   "suppressed": false,
+   "rolled_back": false
+  },
+  {
+   "name": "Fillet1",
+   "type": "FilletFeature",
+   "error": null,
+   "warning": null,
+   "suppressed": false,
+   "rolled_back": false
+  },
+  {
+   "name": "Shell1",
+   "type": "ShellFeature",
+   "error": null,
+   "warning": null,
+   "suppressed": false,
+   "rolled_back": false
+  },
+  {
+   "name": "Boss1",
+   "type": "BossFeature",
+   "error": null,
+   "warning": null,
+   "suppressed": false,
+   "rolled_back": false
+  },
+  {
+   "name": "Boss2",
+   "type": "BossFeature",
+   "error": null,
+   "warning": null,
+   "suppressed": false,
+   "rolled_back": false
+  },
+  {
+   "name": "Boss3",
+   "type": "BossFeature",
+   "error": null,
+   "warning": null,
+   "suppressed": false,
+   "rolled_back": false
+  },
+  {
+   "name": "Boss4",
+   "type": "BossFeature",
+   "error": null,
+   "warning": null,
+   "suppressed": false,
+   "rolled_back": false
+  },
+  {
+   "name": "Lip1",
+   "type": "LipFeature",
+   "error": null,
+   "warning": null,
+   "suppressed": false,
+   "rolled_back": false
+  }
+ ],
+ "volume_after_lip": 25913.25265436048
+}

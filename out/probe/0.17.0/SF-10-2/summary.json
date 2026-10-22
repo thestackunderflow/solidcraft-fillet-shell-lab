@@ -1,0 +1,111 @@
+{
+ "cell": "SF-10",
+ "order": "SF",
+ "R": 10,
+ "rep": 2,
+ "version": "0.17.0",
+ "batch1": {
+  "isError": false,
+  "ok": true
+ },
+ "stage1_md5": "47adb3c26664d6e9ddab24ccfd53317c",
+ "batch2": {
+  "isError": true,
+  "ok": false,
+  "completed": 0,
+  "failed": {
+   "command": "solid.fillet",
+   "error": "fillet: the rounds would leave openings in the surface (they overlap where a wall or a face is narrower than both); the largest radius that fits is 6.82 mm",
+   "index": 0
+  },
+  "rolled_back": true,
+  "undone": 0
+ },
+ "timeline_before": [
+  {
+   "name": "Sketch1",
+   "type": "Sketch",
+   "error": null,
+   "warning": null,
+   "suppressed": false,
+   "rolled_back": false
+  },
+  {
+   "name": "Extrude1",
+   "type": "ExtrudeFeature",
+   "error": null,
+   "warning": null,
+   "suppressed": false,
+   "rolled_back": false
+  },
+  {
+   "name": "Shell1",
+   "type": "ShellFeature",
+   "error": null,
+   "warning": null,
+   "suppressed": false,
+   "rolled_back": false
+  }
+ ],
+ "timeline_after": [
+  {
+   "name": "Sketch1",
+   "type": "Sketch",
+   "error": null,
+   "warning": null,
+   "suppressed": false,
+   "rolled_back": false
+  },
+  {
+   "name": "Extrude1",
+   "type": "ExtrudeFeature",
+   "error": null,
+   "warning": null,
+   "suppressed": false,
+   "rolled_back": false
+  },
+  {
+   "name": "Shell1",
+   "type": "ShellFeature",
+   "error": null,
+   "warning": null,
+   "suppressed": false,
+   "rolled_back": false
+  }
+ ],
+ "timeline_unchanged": true,
+ "sc_volume_mm3": 24832.0,
+ "final_md5": "47adb3c26664d6e9ddab24ccfd53317c",
+ "export": {
+  "isError": false
+ },
+ "stl": {
+  "size": [
+   80.0,
+   60.0,
+   30.0
+  ],
+  "volume_mm3": 24832.0,
+  "wall_status": "OK",
+  "wall_mm": 2.0,
+  "corner_r_fit": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "raw_polyline_mm": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "sagitta_mm": [
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ "wall_s": 0.81
+}

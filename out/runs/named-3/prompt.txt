@@ -1,0 +1,1 @@
+Use the solidcraft MCP tools to make a 3D-printable open-top box in millimetres: 80 wide along X, 60 deep along Y, 30 tall along Z, with walls and floor 2 mm thick and the four vertical outside corners rounded to a 10 mm radius. Export it as STL to /lab/out/box.stl. Report the bounding box, the volume and any step that failed. Round the corners before you hollow it out.

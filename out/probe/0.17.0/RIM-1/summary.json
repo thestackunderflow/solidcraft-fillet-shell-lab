@@ -1,0 +1,122 @@
+{
+ "cell": "RIM",
+ "order": "FS",
+ "R": 6,
+ "rep": 1,
+ "version": "0.17.0",
+ "batch1": {
+  "isError": false,
+  "ok": true
+ },
+ "stage1_md5": "5f204ea2fa4444d2cfcfa1cc6c61bd39",
+ "batch2": {
+  "isError": false,
+  "ok": true,
+  "completed": 1,
+  "failed": null,
+  "rolled_back": null,
+  "undone": null,
+  "result_keys": [
+   "bodies",
+   "changed_bodies",
+   "created_bodies",
+   "feature",
+   "ms",
+   "name",
+   "removed_bodies",
+   "warning"
+  ],
+  "warning": null
+ },
+ "timeline_before": [
+  {
+   "name": "Sketch1",
+   "type": "Sketch",
+   "error": null,
+   "warning": null,
+   "suppressed": false,
+   "rolled_back": false
+  },
+  {
+   "name": "Extrude1",
+   "type": "ExtrudeFeature",
+   "error": null,
+   "warning": null,
+   "suppressed": false,
+   "rolled_back": false
+  },
+  {
+   "name": "Fillet1",
+   "type": "FilletFeature",
+   "error": null,
+   "warning": null,
+   "suppressed": false,
+   "rolled_back": false
+  }
+ ],
+ "timeline_after": [
+  {
+   "name": "Sketch1",
+   "type": "Sketch",
+   "error": null,
+   "warning": null,
+   "suppressed": false,
+   "rolled_back": false
+  },
+  {
+   "name": "Extrude1",
+   "type": "ExtrudeFeature",
+   "error": null,
+   "warning": null,
+   "suppressed": false,
+   "rolled_back": false
+  },
+  {
+   "name": "Fillet1",
+   "type": "FilletFeature",
+   "error": null,
+   "warning": null,
+   "suppressed": false,
+   "rolled_back": false
+  },
+  {
+   "name": "Fillet2",
+   "type": "FilletFeature",
+   "error": null,
+   "warning": null,
+   "suppressed": false,
+   "rolled_back": false
+  }
+ ],
+ "timeline_unchanged": false,
+ "sc_volume_mm3": 135298.16956495002,
+ "final_md5": "0a1d8c1755908cc5f94e3d0c0e3474c5",
+ "export": {
+  "isError": false
+ },
+ "stl": {
+  "size": [
+   80.0,
+   60.0,
+   30.0
+  ],
+  "volume_mm3": 135284.372,
+  "wall_status": "BREACHED",
+  "wall_mm": 0.0,
+  "corner_r_fit": [],
+  "raw_polyline_mm": [],
+  "sagitta_mm": []
+ },
+ "sc_wall": {
+  "cylinder_radii": [
+   6.0,
+   25.0
+  ],
+  "error": "no inner round face found"
+ },
+ "expected_volume": 24289.487,
+ "expected_wall": 2.0,
+ "stl_vs_expected_pct": 456.9668,
+ "sc_vs_expected_pct": 457.0236,
+ "wall_s": 0.46
+}

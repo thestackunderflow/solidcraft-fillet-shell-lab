@@ -1,0 +1,56 @@
+{
+ "commands": [
+  {
+   "command": "plastic.boss",
+   "params": {
+    "position": [
+     -30,
+     -20,
+     2
+    ],
+    "diameter": 7,
+    "height": 12,
+    "hole_diameter": 2.5
+   }
+  },
+  {
+   "command": "plastic.boss",
+   "params": {
+    "position": [
+     30,
+     -20,
+     2
+    ],
+    "diameter": 7,
+    "height": 12,
+    "hole_diameter": 2.5
+   }
+  },
+  {
+   "command": "plastic.boss",
+   "params": {
+    "position": [
+     30,
+     20,
+     2
+    ],
+    "diameter": 7,
+    "height": 12,
+    "hole_diameter": 2.5
+   }
+  },
+  {
+   "command": "plastic.boss",
+   "params": {
+    "position": [
+     -30,
+     20,
+     2
+    ],
+    "diameter": 7,
+    "height": 12,
+    "hole_diameter": 2.5
+   }
+  }
+ ]
+}

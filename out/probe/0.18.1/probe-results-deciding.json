@@ -1,0 +1,1120 @@
+[
+ {
+  "cell": "FS-10",
+  "order": "FS",
+  "R": 10,
+  "rep": 1,
+  "version": "0.18.1",
+  "batch1": {
+   "isError": false,
+   "ok": true
+  },
+  "stage1_md5": "04088adece0e6e0fe14051a9003950b6",
+  "batch2": {
+   "isError": false,
+   "ok": true,
+   "completed": 1,
+   "failed": null,
+   "rolled_back": null,
+   "undone": null,
+   "result_keys": [
+    "bodies",
+    "changed_bodies",
+    "created_bodies",
+    "feature",
+    "ms",
+    "name",
+    "removed_bodies",
+    "warning"
+   ],
+   "warning": null
+  },
+  "timeline_before": [
+   {
+    "name": "Sketch1",
+    "type": "Sketch",
+    "error": null,
+    "warning": null,
+    "suppressed": false,
+    "rolled_back": false
+   },
+   {
+    "name": "Extrude1",
+    "type": "ExtrudeFeature",
+    "error": null,
+    "warning": null,
+    "suppressed": false,
+    "rolled_back": false
+   },
+   {
+    "name": "Fillet1",
+    "type": "FilletFeature",
+    "error": null,
+    "warning": null,
+    "suppressed": false,
+    "rolled_back": false
+   }
+  ],
+  "timeline_after": [
+   {
+    "name": "Sketch1",
+    "type": "Sketch",
+    "error": null,
+    "warning": null,
+    "suppressed": false,
+    "rolled_back": false
+   },
+   {
+    "name": "Extrude1",
+    "type": "ExtrudeFeature",
+    "error": null,
+    "warning": null,
+    "suppressed": false,
+    "rolled_back": false
+   },
+   {
+    "name": "Fillet1",
+    "type": "FilletFeature",
+    "error": null,
+    "warning": null,
+    "suppressed": false,
+    "rolled_back": false
+   },
+   {
+    "name": "Shell1",
+    "type": "ShellFeature",
+    "error": null,
+    "warning": null,
+    "suppressed": false,
+    "rolled_back": false
+   }
+  ],
+  "timeline_unchanged": false,
+  "sc_volume_mm3": 23795.10015262463,
+  "final_md5": "998b9feff1a3bdf5555e5f786670bb77",
+  "export": {
+   "isError": false
+  },
+  "stl": {
+   "size": [
+    80.0,
+    60.0,
+    30.0
+   ],
+   "volume_mm3": 23788.91,
+   "wall_status": "OK",
+   "wall_mm": 2.0,
+   "corner_r_fit": [
+    10.0,
+    10.0,
+    10.0,
+    10.0
+   ],
+   "raw_polyline_mm": [
+    1.9973,
+    1.9973,
+    1.9973,
+    1.9973
+   ],
+   "sagitta_mm": [
+    0.0134,
+    0.0134,
+    0.0134,
+    0.0134
+   ]
+  },
+  "sc_wall": {
+   "cylinder_radii": [
+    8.0,
+    10.0
+   ],
+   "outer_face_radius": 9.999999999999954,
+   "items": [
+    {
+     "type": "face",
+     "body": "Body1",
+     "index": 4,
+     "point": [
+      30.910271809467858,
+      29.95848408307651,
+      14.999999999986166
+     ]
+    },
+    {
+     "type": "face",
+     "body": "Body1",
+     "index": 12,
+     "point": [
+      37.9667297337034,
+      20.728846588882753,
+      13.215758182691218
+     ]
+    }
+   ],
+   "reply": {
+    "center_delta": [
+     1.0658141036401503e-14,
+     -2.4868995751603507e-14,
+     0.0
+    ],
+    "center_distance": 2.7056661287843684e-14,
+    "center_from": [
+     30.000000000000018,
+     20.00000000000005,
+     15.00000000000001
+    ],
+    "center_to": [
+     30.00000000000003,
+     20.000000000000025,
+     15.00000000000001
+    ],
+    "delta": [
+     -1.5441022924051424,
+     -1.2543165345716325,
+     6.661338147750939e-16
+    ],
+    "distance_mm": 1.989362173740771,
+    "from": [
+     38.240066382153984,
+     25.63199456165335,
+     1.9999999999999998
+    ],
+    "items": [
+     {
+      "angle_deg": 90.0000000000003,
+      "arc_length": 15.707963267948946,
+      "area_mm2": 470.4776364040598,
+      "axis": [
+       0.0,
+       0.0,
+       -1.0
+      ],
+      "center": [
+       30.000000000000018,
+       20.00000000000005,
+       15.00000000000001
+      ],
+      "diameter": 19.999999999999908,
+      "planar": false,
+      "radius": 9.999999999999954,
+      "round": "cylinder",
+      "type": "face"
+     },
+     {
+      "angle_deg": 90.00000000000051,
+      "arc_length": 12.566370614359185,
+      "area_mm2": 351.28996851503155,
+      "axis": [
+       0.0,
+       0.0,
+       1.0
+      ],
+      "center": [
+       30.00000000000003,
+       20.000000000000025,
+       15.999999999999998
+      ],
+      "diameter": 15.999999999999925,
+      "planar": false,
+      "radius": 7.999999999999963,
+      "round": "cylinder",
+      "type": "face"
+     }
+    ],
+    "max": 32.61901286048699,
+    "max_delta": [
+     7.999999999538488,
+     -10.000000000000004,
+     30.0
+    ],
+    "max_from": [
+     30.000000000461505,
+     30.000000000000004,
+     0.0
+    ],
+    "max_to": [
+     37.99999999999999,
+     20.0,
+     30.0
+    ],
+    "measure": "center",
+    "min": 1.989362173740771,
+    "to": [
+     36.69596408974884,
+     24.377678027081718,
+     2.0000000000000004
+    ]
+   },
+   "min_mm": 1.989362173740771,
+   "radius_minus_axis_mm": 1.999999999999964,
+   "sc_radii": [
+    9.999999999999954,
+    7.999999999999963
+   ],
+   "center_distance": 2.7056661287843684e-14
+  },
+  "expected_volume": 23795.044,
+  "expected_wall": 2.0,
+  "stl_vs_expected_pct": -0.0258,
+  "sc_vs_expected_pct": 0.0002,
+  "wall_s": 0.99
+ },
+ {
+  "cell": "FS-6",
+  "order": "FS",
+  "R": 6,
+  "rep": 1,
+  "version": "0.18.1",
+  "batch1": {
+   "isError": false,
+   "ok": true
+  },
+  "stage1_md5": "5f204ea2fa4444d2cfcfa1cc6c61bd39",
+  "batch2": {
+   "isError": false,
+   "ok": true,
+   "completed": 1,
+   "failed": null,
+   "rolled_back": null,
+   "undone": null,
+   "result_keys": [
+    "bodies",
+    "changed_bodies",
+    "created_bodies",
+    "feature",
+    "ms",
+    "name",
+    "removed_bodies",
+    "warning"
+   ],
+   "warning": null
+  },
+  "timeline_before": [
+   {
+    "name": "Sketch1",
+    "type": "Sketch",
+    "error": null,
+    "warning": null,
+    "suppressed": false,
+    "rolled_back": false
+   },
+   {
+    "name": "Extrude1",
+    "type": "ExtrudeFeature",
+    "error": null,
+    "warning": null,
+    "suppressed": false,
+    "rolled_back": false
+   },
+   {
+    "name": "Fillet1",
+    "type": "FilletFeature",
+    "error": null,
+    "warning": null,
+    "suppressed": false,
+    "rolled_back": false
+   }
+  ],
+  "timeline_after": [
+   {
+    "name": "Sketch1",
+    "type": "Sketch",
+    "error": null,
+    "warning": null,
+    "suppressed": false,
+    "rolled_back": false
+   },
+   {
+    "name": "Extrude1",
+    "type": "ExtrudeFeature",
+    "error": null,
+    "warning": null,
+    "suppressed": false,
+    "rolled_back": false
+   },
+   {
+    "name": "Fillet1",
+    "type": "FilletFeature",
+    "error": null,
+    "warning": null,
+    "suppressed": false,
+    "rolled_back": false
+   },
+   {
+    "name": "Shell1",
+    "type": "ShellFeature",
+    "error": null,
+    "warning": null,
+    "suppressed": false,
+    "rolled_back": false
+   }
+  ],
+  "timeline_unchanged": false,
+  "sc_volume_mm3": 24289.396020210213,
+  "final_md5": "c1d014191ce6085e1ea06830b6ac3577",
+  "export": {
+   "isError": false
+  },
+  "stl": {
+   "size": [
+    80.0,
+    60.0,
+    30.0
+   ],
+   "volume_mm3": 24291.122,
+   "wall_status": "OK",
+   "wall_mm": 2.0,
+   "corner_r_fit": [
+    6.0,
+    6.0,
+    6.0,
+    6.0
+   ],
+   "raw_polyline_mm": [
+    1.9973,
+    1.9973,
+    1.9973,
+    1.9973
+   ],
+   "sagitta_mm": [
+    0.008,
+    0.008,
+    0.008,
+    0.008
+   ]
+  },
+  "sc_wall": {
+   "cylinder_radii": [
+    4.0,
+    6.0
+   ],
+   "outer_face_radius": 5.999999999999963,
+   "items": [
+    {
+     "type": "face",
+     "body": "Body1",
+     "index": 4,
+     "point": [
+      34.54743659785502,
+      29.974973905493556,
+      12.862961532084
+     ]
+    },
+    {
+     "type": "face",
+     "body": "Body1",
+     "index": 12,
+     "point": [
+      34.36520280035867,
+      27.98329347583255,
+      17.553413608979504
+     ]
+    }
+   ],
+   "reply": {
+    "center_delta": [
+     -1.4210854715202004e-14,
+     -5.3290705182007514e-14,
+     0.0
+    ],
+    "center_distance": 5.51529477954916e-14,
+    "center_from": [
+     34.0,
+     24.000000000000036,
+     15.000000000000002
+    ],
+    "center_to": [
+     33.999999999999986,
+     23.999999999999982,
+     15.000000000000002
+    ],
+    "delta": [
+     -1.544102292405178,
+     -1.254316534571668,
+     -4.440892098500626e-16
+    ],
+    "distance_mm": 1.989362173740821,
+    "from": [
+     38.89208433727959,
+     27.443155548112514,
+     1.9999999999999993
+    ],
+    "items": [
+     {
+      "angle_deg": 90.0000000000003,
+      "arc_length": 9.424777960769353,
+      "area_mm2": 282.2865818424356,
+      "axis": [
+       0.0,
+       0.0,
+       -1.0
+      ],
+      "center": [
+       34.0,
+       24.000000000000036,
+       15.000000000000002
+      ],
+      "diameter": 11.999999999999925,
+      "planar": false,
+      "radius": 5.999999999999963,
+      "round": "cylinder",
+      "type": "face"
+     },
+     {
+      "angle_deg": 89.99999999999945,
+      "arc_length": 6.283185307179571,
+      "area_mm2": 175.6449842577814,
+      "axis": [
+       0.0,
+       0.0,
+       1.0
+      ],
+      "center": [
+       33.999999999999986,
+       23.999999999999982,
+       16.000000000000004
+      ],
+      "diameter": 8.00000000000003,
+      "planar": false,
+      "radius": 4.000000000000015,
+      "round": "cylinder",
+      "type": "face"
+     }
+    ],
+    "max": 30.85449724104713,
+    "max_delta": [
+     -5.999999999815394,
+     3.9999999999999964,
+     30.000000000000004
+    ],
+    "max_from": [
+     39.99999999999999,
+     24.0,
+     0.0
+    ],
+    "max_to": [
+     34.0000000001846,
+     27.999999999999996,
+     30.000000000000004
+    ],
+    "measure": "center",
+    "min": 1.989362173740821,
+    "to": [
+     37.34798204487441,
+     26.188839013540846,
+     1.999999999999999
+    ]
+   },
+   "min_mm": 1.989362173740821,
+   "radius_minus_axis_mm": 1.9999999999998925,
+   "sc_radii": [
+    5.999999999999963,
+    4.000000000000015
+   ],
+   "center_distance": 5.51529477954916e-14
+  },
+  "expected_volume": 24289.487,
+  "expected_wall": 2.0,
+  "stl_vs_expected_pct": 0.0067,
+  "sc_vs_expected_pct": -0.0004,
+  "wall_s": 0.42
+ },
+ {
+  "cell": "SF-6",
+  "order": "SF",
+  "R": 6,
+  "rep": 1,
+  "version": "0.18.1",
+  "batch1": {
+   "isError": false,
+   "ok": true
+  },
+  "stage1_md5": "47adb3c26664d6e9ddab24ccfd53317c",
+  "batch2": {
+   "isError": false,
+   "ok": true,
+   "completed": 1,
+   "failed": null,
+   "rolled_back": null,
+   "undone": null,
+   "result_keys": [
+    "bodies",
+    "changed_bodies",
+    "created_bodies",
+    "feature",
+    "ms",
+    "name",
+    "removed_bodies",
+    "warning"
+   ],
+   "warning": null
+  },
+  "timeline_before": [
+   {
+    "name": "Sketch1",
+    "type": "Sketch",
+    "error": null,
+    "warning": null,
+    "suppressed": false,
+    "rolled_back": false
+   },
+   {
+    "name": "Extrude1",
+    "type": "ExtrudeFeature",
+    "error": null,
+    "warning": null,
+    "suppressed": false,
+    "rolled_back": false
+   },
+   {
+    "name": "Shell1",
+    "type": "ShellFeature",
+    "error": null,
+    "warning": null,
+    "suppressed": false,
+    "rolled_back": false
+   }
+  ],
+  "timeline_after": [
+   {
+    "name": "Sketch1",
+    "type": "Sketch",
+    "error": null,
+    "warning": null,
+    "suppressed": false,
+    "rolled_back": false
+   },
+   {
+    "name": "Extrude1",
+    "type": "ExtrudeFeature",
+    "error": null,
+    "warning": null,
+    "suppressed": false,
+    "rolled_back": false
+   },
+   {
+    "name": "Shell1",
+    "type": "ShellFeature",
+    "error": null,
+    "warning": null,
+    "suppressed": false,
+    "rolled_back": false
+   },
+   {
+    "name": "Fillet1",
+    "type": "FilletFeature",
+    "error": null,
+    "warning": null,
+    "suppressed": false,
+    "rolled_back": false
+   }
+  ],
+  "timeline_unchanged": false,
+  "sc_volume_mm3": 23904.312149931528,
+  "final_md5": "a9a337e3f2ecd664d0aee1f597680be1",
+  "export": {
+   "isError": false
+  },
+  "stl": {
+   "size": [
+    80.0,
+    60.0,
+    30.0
+   ],
+   "volume_mm3": 23899.438,
+   "wall_status": "OK",
+   "wall_mm": 0.3431,
+   "corner_r_fit": [
+    6.0,
+    6.0,
+    6.0,
+    6.0
+   ],
+   "raw_polyline_mm": [
+    0.3427,
+    0.3427,
+    0.3427,
+    0.3427
+   ],
+   "sagitta_mm": [
+    0.008,
+    0.008,
+    0.008,
+    0.008
+   ]
+  },
+  "sc_wall": {
+   "cylinder_radii": [
+    6.0
+   ],
+   "outer_face_radius": 6.000000000000022,
+   "items": [
+    {
+     "type": "face",
+     "body": "Body1",
+     "index": 11,
+     "point": [
+      34.54743659785501,
+      29.974973905493556,
+      12.862961532083997
+     ]
+    },
+    {
+     "type": "edge",
+     "body": "Body1",
+     "index": 17,
+     "point": [
+      38.0,
+      28.0,
+      16.0
+     ]
+    }
+   ],
+   "reply": {
+    "center_delta": [
+     4.000000000000014,
+     4.000000000000021,
+     0.0
+    ],
+    "center_distance": 5.6568542494924055,
+    "center_from": [
+     33.999999999999986,
+     23.99999999999998,
+     15.000000000000004
+    ],
+    "center_to": [
+     38.0,
+     28.0,
+     15.000000000000004
+    ],
+    "delta": [
+     -0.2649260699939546,
+     -0.21520669431485473,
+     0.0
+    ],
+    "distance_mm": 0.3413205880698805,
+    "from": [
+     38.264926069993955,
+     28.215206694314855,
+     22.125
+    ],
+    "items": [
+     {
+      "angle_deg": 89.99999999999969,
+      "arc_length": 9.424777960769383,
+      "area_mm2": 282.2865818424359,
+      "axis": [
+       0.0,
+       0.0,
+       -1.0
+      ],
+      "center": [
+       33.999999999999986,
+       23.99999999999998,
+       15.000000000000004
+      ],
+      "diameter": 12.000000000000044,
+      "planar": false,
+      "radius": 6.000000000000022,
+      "round": "cylinder",
+      "type": "face"
+     },
+     {
+      "length_mm": 28.0,
+      "type": "edge"
+     }
+    ],
+    "max": 30.33150177620621,
+    "max_delta": [
+     -2.0,
+     4.0000000000000036,
+     30.000000000000007
+    ],
+    "max_from": [
+     40.0,
+     23.999999999999996,
+     -7.105427357601002e-15
+    ],
+    "max_to": [
+     38.0,
+     28.0,
+     30.0
+    ],
+    "measure": "center",
+    "min": 0.3413205880698805,
+    "to": [
+     38.0,
+     28.0,
+     22.125
+    ]
+   },
+   "min_mm": 0.3413205880698805,
+   "radius_minus_axis_mm": 0.34314575050761675,
+   "sc_radii": [
+    6.000000000000022,
+    0.0
+   ],
+   "center_distance": 5.6568542494924055
+  },
+  "expected_volume": 23904.92,
+  "expected_wall": 0.3431,
+  "stl_vs_expected_pct": -0.0229,
+  "sc_vs_expected_pct": -0.0025,
+  "wall_s": 0.34
+ },
+ {
+  "cell": "SF-10",
+  "order": "SF",
+  "R": 10,
+  "rep": 1,
+  "version": "0.18.1",
+  "batch1": {
+   "isError": false,
+   "ok": true
+  },
+  "stage1_md5": "47adb3c26664d6e9ddab24ccfd53317c",
+  "batch2": {
+   "isError": true,
+   "ok": false,
+   "completed": 0,
+   "failed": {
+    "command": "solid.fillet",
+    "error": "fillet: the rounds would leave openings in the surface (they overlap where a wall or a face is narrower than both); the largest radius that fits is 6.82 mm",
+    "index": 0
+   },
+   "rolled_back": true,
+   "undone": 0
+  },
+  "timeline_before": [
+   {
+    "name": "Sketch1",
+    "type": "Sketch",
+    "error": null,
+    "warning": null,
+    "suppressed": false,
+    "rolled_back": false
+   },
+   {
+    "name": "Extrude1",
+    "type": "ExtrudeFeature",
+    "error": null,
+    "warning": null,
+    "suppressed": false,
+    "rolled_back": false
+   },
+   {
+    "name": "Shell1",
+    "type": "ShellFeature",
+    "error": null,
+    "warning": null,
+    "suppressed": false,
+    "rolled_back": false
+   }
+  ],
+  "timeline_after": [
+   {
+    "name": "Sketch1",
+    "type": "Sketch",
+    "error": null,
+    "warning": null,
+    "suppressed": false,
+    "rolled_back": false
+   },
+   {
+    "name": "Extrude1",
+    "type": "ExtrudeFeature",
+    "error": null,
+    "warning": null,
+    "suppressed": false,
+    "rolled_back": false
+   },
+   {
+    "name": "Shell1",
+    "type": "ShellFeature",
+    "error": null,
+    "warning": null,
+    "suppressed": false,
+    "rolled_back": false
+   }
+  ],
+  "timeline_unchanged": true,
+  "sc_volume_mm3": 24832.0,
+  "final_md5": "47adb3c26664d6e9ddab24ccfd53317c",
+  "export": {
+   "isError": false
+  },
+  "stl": {
+   "size": [
+    80.0,
+    60.0,
+    30.0
+   ],
+   "volume_mm3": 24832.0,
+   "wall_status": "OK",
+   "wall_mm": 2.0,
+   "corner_r_fit": [
+    null,
+    null,
+    null,
+    null
+   ],
+   "raw_polyline_mm": [
+    null,
+    null,
+    null,
+    null
+   ],
+   "sagitta_mm": [
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  "wall_s": 0.88
+ },
+ {
+  "cell": "SF-offered",
+  "order": "SF",
+  "R": 6.82,
+  "rep": 1,
+  "version": "0.18.1",
+  "batch1": {
+   "isError": false,
+   "ok": true
+  },
+  "stage1_md5": "47adb3c26664d6e9ddab24ccfd53317c",
+  "batch2": {
+   "isError": false,
+   "ok": true,
+   "completed": 1,
+   "failed": null,
+   "rolled_back": null,
+   "undone": null,
+   "result_keys": [
+    "bodies",
+    "changed_bodies",
+    "created_bodies",
+    "feature",
+    "ms",
+    "name",
+    "removed_bodies",
+    "warning"
+   ],
+   "warning": null
+  },
+  "timeline_before": [
+   {
+    "name": "Sketch1",
+    "type": "Sketch",
+    "error": null,
+    "warning": null,
+    "suppressed": false,
+    "rolled_back": false
+   },
+   {
+    "name": "Extrude1",
+    "type": "ExtrudeFeature",
+    "error": null,
+    "warning": null,
+    "suppressed": false,
+    "rolled_back": false
+   },
+   {
+    "name": "Shell1",
+    "type": "ShellFeature",
+    "error": null,
+    "warning": null,
+    "suppressed": false,
+    "rolled_back": false
+   }
+  ],
+  "timeline_after": [
+   {
+    "name": "Sketch1",
+    "type": "Sketch",
+    "error": null,
+    "warning": null,
+    "suppressed": false,
+    "rolled_back": false
+   },
+   {
+    "name": "Extrude1",
+    "type": "ExtrudeFeature",
+    "error": null,
+    "warning": null,
+    "suppressed": false,
+    "rolled_back": false
+   },
+   {
+    "name": "Shell1",
+    "type": "ShellFeature",
+    "error": null,
+    "warning": null,
+    "suppressed": false,
+    "rolled_back": false
+   },
+   {
+    "name": "Fillet1",
+    "type": "FilletFeature",
+    "error": null,
+    "warning": null,
+    "suppressed": false,
+    "rolled_back": false
+   }
+  ],
+  "timeline_unchanged": false,
+  "sc_volume_mm3": 23633.416990067013,
+  "final_md5": "2edfef2f298a59dce082a63b4adb6dab",
+  "export": {
+   "isError": false
+  },
+  "stl": {
+   "size": [
+    80.0,
+    60.0,
+    30.0
+   ],
+   "volume_mm3": 23627.119,
+   "wall_status": "OK",
+   "wall_mm": 0.0035,
+   "corner_r_fit": [
+    6.82,
+    6.82,
+    6.82,
+    6.82
+   ],
+   "raw_polyline_mm": [
+    0.0035,
+    0.0035,
+    0.0035,
+    0.0035
+   ],
+   "sagitta_mm": [
+    0.0091,
+    0.0091,
+    0.0091,
+    0.0091
+   ]
+  },
+  "sc_wall": {
+   "cylinder_radii": [
+    6.82
+   ],
+   "outer_face_radius": 6.820000000000001,
+   "items": [
+    {
+     "type": "face",
+     "body": "Body1",
+     "index": 11,
+     "point": [
+      39.971574227330095,
+      23.80202854811148,
+      15.000000000006482
+     ]
+    },
+    {
+     "type": "edge",
+     "body": "Body1",
+     "index": 17,
+     "point": [
+      38.0,
+      28.0,
+      16.0
+     ]
+    }
+   ],
+   "reply": {
+    "center_delta": [
+     4.82,
+     4.82,
+     0.0
+    ],
+    "center_distance": 6.816509370638318,
+    "center_from": [
+     33.18,
+     23.18,
+     15.000000000000007
+    ],
+    "center_to": [
+     38.0,
+     28.0,
+     15.000000000000007
+    ],
+    "delta": [
+     -0.002694944399650012,
+     -0.0021891770622062268,
+     0.0
+    ],
+    "distance_mm": 0.0034720630073336585,
+    "from": [
+     38.00269494439965,
+     28.002189177062206,
+     19.9375
+    ],
+    "items": [
+     {
+      "angle_deg": 89.9999999999998,
+      "arc_length": 10.712830948741171,
+      "area_mm2": 320.86574802756843,
+      "axis": [
+       0.0,
+       0.0,
+       -1.0
+      ],
+      "center": [
+       33.18,
+       23.18,
+       15.000000000000007
+      ],
+      "diameter": 13.640000000000002,
+      "planar": false,
+      "radius": 6.820000000000001,
+      "round": "cylinder",
+      "type": "face"
+     },
+     {
+      "length_mm": 28.0,
+      "type": "edge"
+     }
+    ],
+    "max": 30.45049096484324,
+    "max_delta": [
+     -2.0,
+     4.819999999999979,
+     30.0
+    ],
+    "max_from": [
+     40.0,
+     23.18000000000002,
+     -1.7763568394002505e-15
+    ],
+    "max_to": [
+     38.0,
+     28.0,
+     30.0
+    ],
+    "measure": "center",
+    "min": 0.0034720630073336585,
+    "to": [
+     38.0,
+     28.0,
+     19.9375
+    ]
+   },
+   "min_mm": 0.0034720630073336585,
+   "radius_minus_axis_mm": 0.003490629361682984,
+   "sc_radii": [
+    6.820000000000001,
+    0.0
+   ],
+   "center_distance": 6.816509370638318
+  },
+  "expected_volume": 23634.202,
+  "expected_wall": 0.0035,
+  "stl_vs_expected_pct": -0.03,
+  "sc_vs_expected_pct": -0.0033,
+  "wall_s": 0.38,
+  "offered_from_error": "fillet: the rounds would leave openings in the surface (they overlap where a wall or a face is narrower than both); the largest radius that fits is 6.82 mm"
+ }
+]

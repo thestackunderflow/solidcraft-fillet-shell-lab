@@ -1,0 +1,182 @@
+{
+ "lab": "solidcraft-fillet-shell-lab",
+ "commit": "f384450",
+ "note": "every card pins solidcraft-fillet-shell-lab@<commit>:<path>; sha256 of the committed blob",
+ "sources": [
+  {
+   "path": "out/steps/batch-shell-then-fillet.jsonl",
+   "pin": "solidcraft-fillet-shell-lab@f384450:out/steps/batch-shell-then-fillet.jsonl",
+   "sha256": "d9748de3ea8c1e571fc82db6219f9bc1bbb903a5a953d596316fd84ac3344e49"
+  },
+  {
+   "path": "out/steps/batch-fillet-then-shell.jsonl",
+   "pin": "solidcraft-fillet-shell-lab@f384450:out/steps/batch-fillet-then-shell.jsonl",
+   "sha256": "381a388606a85b47983c011fe11bea870e1d64a78de192141519c34521be5226"
+  },
+  {
+   "path": "out/steps/batch-replies.json",
+   "pin": "solidcraft-fillet-shell-lab@f384450:out/steps/batch-replies.json",
+   "sha256": "a1e90a7770bbb1b9bd6e33478f7d778df62ce9f29352c6812ee18c18df5655ee"
+  },
+  {
+   "path": "out/steps/run-shell-then-fillet.json",
+   "pin": "solidcraft-fillet-shell-lab@f384450:out/steps/run-shell-then-fillet.json",
+   "sha256": "42ab4241807383c509694e6bc018e2492487c5ad4f2a5f1b4b4db7c7c43cef6d"
+  },
+  {
+   "path": "out/steps/run-fillet-then-shell.json",
+   "pin": "solidcraft-fillet-shell-lab@f384450:out/steps/run-fillet-then-shell.json",
+   "sha256": "c63aece769477fce21a1657d36cafe6a313773474e47f09f115ee436e3b2da6f"
+  },
+  {
+   "path": "out/set_parameter/transcript.jsonl",
+   "pin": "solidcraft-fillet-shell-lab@f384450:out/set_parameter/transcript.jsonl",
+   "sha256": "0d853541f548bcf20444c3266cbdfb36b3d471aff7151b32c4d6d90007599d39"
+  },
+  {
+   "path": "steps/shell-then-fillet.json",
+   "pin": "solidcraft-fillet-shell-lab@f384450:steps/shell-then-fillet.json",
+   "sha256": "48898544aae7e65a5da807aeee0612ff2dd18facfaaf7e25ed599a46f47556d4"
+  },
+  {
+   "path": "steps/fillet-then-shell.json",
+   "pin": "solidcraft-fillet-shell-lab@f384450:steps/fillet-then-shell.json",
+   "sha256": "1789c30eba868b5afe3825d8dd829b3bb728f37d7ceb9a1acec77fd66399306d"
+  },
+  {
+   "path": "out/probe/0.17.0/FS-10-1/measure.json",
+   "pin": "solidcraft-fillet-shell-lab@f384450:out/probe/0.17.0/FS-10-1/measure.json",
+   "sha256": "4c5d93e996dcd16340a0fed2e7e6287721bf29707c516819ab4570c2b14baf88"
+  },
+  {
+   "path": "out/probe/0.17.0/SF-6-1/batch2_reply.json",
+   "pin": "solidcraft-fillet-shell-lab@f384450:out/probe/0.17.0/SF-6-1/batch2_reply.json",
+   "sha256": "327ec0bda7765a5506d6b8455521e5c5783f64457c0072188d5de64ec363a0c1"
+  },
+  {
+   "path": "out/probe/0.17.0/SF-offered-1/batch2_reply.json",
+   "pin": "solidcraft-fillet-shell-lab@f384450:out/probe/0.17.0/SF-offered-1/batch2_reply.json",
+   "sha256": "9ee545ea5d479d54a276b3e3bfaaaf726146556cac7c700f46e1660d80588732"
+  },
+  {
+   "path": "out/probe/0.17.0/SF-10-1/batch2_reply.json",
+   "pin": "solidcraft-fillet-shell-lab@f384450:out/probe/0.17.0/SF-10-1/batch2_reply.json",
+   "sha256": "0d66044cbaf3b335f6d444cfa6cfb684094abc0ebd456fb1a54fddbf2899f137"
+  },
+  {
+   "path": "out/probe/SUMMARY.json",
+   "pin": "solidcraft-fillet-shell-lab@f384450:out/probe/SUMMARY.json",
+   "sha256": "9a307d16d85aad86bfd05b45635ea53a8d44a1d682a65b92c0cdf089332befb1"
+  },
+  {
+   "path": "out/runs/SCORES.json",
+   "pin": "solidcraft-fillet-shell-lab@f384450:out/runs/SCORES.json",
+   "sha256": "a418826dd6f4c539f412bae17f980193bf7cc47893677cad13bc811ef44d599c"
+  },
+  {
+   "path": "out/runs/BUDGET.log",
+   "pin": "solidcraft-fillet-shell-lab@f384450:out/runs/BUDGET.log",
+   "sha256": "7a9c8221387077e935c0b6408dd189efbb74a2606650b9c493f57b501403bede"
+  },
+  {
+   "path": "out/evidence/numbers.json",
+   "pin": "solidcraft-fillet-shell-lab@f384450:out/evidence/numbers.json",
+   "sha256": "e93404a64755c7513156edcee29b2dc136722993a15087a72843f1715324bcf3"
+  },
+  {
+   "path": "out/evidence/refusal.txt",
+   "pin": "solidcraft-fillet-shell-lab@f384450:out/evidence/refusal.txt",
+   "sha256": "d375ef5bf02ff131c46fc6ac250a4f157b07a5606d061a12ec15b849dd00a349"
+  },
+  {
+   "path": "claude-run/run.sh",
+   "pin": "solidcraft-fillet-shell-lab@f384450:claude-run/run.sh",
+   "sha256": "72a1f4d681ca156f7041e8e97420d943393f3cf8918b1ff357afc74d2f698b1a"
+  },
+  {
+   "path": "video/terminal-proof.txt",
+   "pin": "solidcraft-fillet-shell-lab@f384450:video/terminal-proof.txt",
+   "sha256": "a40934dcda2e08635091ebb4a5438dc51814c434b114918c5dd01da169ae69df"
+  },
+  {
+   "path": "video/terminal-runs.txt",
+   "pin": "solidcraft-fillet-shell-lab@f384450:video/terminal-runs.txt",
+   "sha256": "478f6a2badfe75e41ea255517f72ecf44bad8f7340be3ca6e932e65d2963977b"
+  },
+  {
+   "path": "video/terminal-prompts.txt",
+   "pin": "solidcraft-fillet-shell-lab@f384450:video/terminal-prompts.txt",
+   "sha256": "deb7985325636ed746cdf4529d9b14e2dbe231e7278951f56ea5c9315948847b"
+  },
+  {
+   "path": "video/terminal-refusal-clause.txt",
+   "pin": "solidcraft-fillet-shell-lab@f384450:video/terminal-refusal-clause.txt",
+   "sha256": "337c6345217557c23cb8de293e479e25acf87575bb4864106a8385cbe6d122af"
+  },
+  {
+   "path": "video/rule-card.txt",
+   "pin": "solidcraft-fillet-shell-lab@f384450:video/rule-card.txt",
+   "sha256": "7caab08a2505aabe915cbdf50f99872bf2c952f91cd37051e3fdff5dd5c76cb3"
+  },
+  {
+   "path": "video/toolcalls.json",
+   "pin": "solidcraft-fillet-shell-lab@f384450:video/toolcalls.json",
+   "sha256": "318442a2999d86decb8190d5023810cf642ea8f9de3568879a8af3433223ff7f"
+  },
+  {
+   "path": "video/json-cards.json",
+   "pin": "solidcraft-fillet-shell-lab@f384450:video/json-cards.json",
+   "sha256": "ff4822a574b5ec89ca367c0e54c26523ce2744e089d781113dd2d47207af2658"
+  },
+  {
+   "path": "video/frames/frame0-both-boxes.png",
+   "pin": "solidcraft-fillet-shell-lab@f384450:video/frames/frame0-both-boxes.png",
+   "sha256": "71593b4993841ed7b1abba22e32e145d24af77efa380d32fd4f9f5ea5e3e1713"
+  },
+  {
+   "path": "video/frames/frame0-both-boxes.script.json",
+   "pin": "solidcraft-fillet-shell-lab@f384450:video/frames/frame0-both-boxes.script.json",
+   "sha256": "0fa01c56da6d524d8c33ef5d639a2d1eddf5563bdf13653c08c5cc3c8644af2a"
+  },
+  {
+   "path": "video/frames/section-shell-only-corner.png",
+   "pin": "solidcraft-fillet-shell-lab@f384450:video/frames/section-shell-only-corner.png",
+   "sha256": "df126be78a023fbd8f1f0b02b419725737b22a62b0f9ca9cd686dd576c2f04b4"
+  },
+  {
+   "path": "video/frames/section-FS-10-corner.png",
+   "pin": "solidcraft-fillet-shell-lab@f384450:video/frames/section-FS-10-corner.png",
+   "sha256": "5ecb5e6b77255b92551d3c1acbac4b5ec6f79f742e66ed67b302391452b2ea59"
+  },
+  {
+   "path": "video/frames/section-SF-6-corner.png",
+   "pin": "solidcraft-fillet-shell-lab@f384450:video/frames/section-SF-6-corner.png",
+   "sha256": "d52e3b0bc7055b9d41ed610382ebf7fd293b45ef31f5baefa92546e73d178f4f"
+  },
+  {
+   "path": "video/frames/section-SF-6.82-corner.png",
+   "pin": "solidcraft-fillet-shell-lab@f384450:video/frames/section-SF-6.82-corner.png",
+   "sha256": "e5c0b02f2cef5fa33f0f272cb85406ae51a73c09a814ce3e054d01f0f7121cbe"
+  },
+  {
+   "path": "video/frames/section-FS-10.png",
+   "pin": "solidcraft-fillet-shell-lab@f384450:video/frames/section-FS-10.png",
+   "sha256": "10f841408a8b91249c56494f5ed918b3ba8d336b9f7bbec4bd4c7dad397f52cf"
+  },
+  {
+   "path": "video/frames/section-SF-6.png",
+   "pin": "solidcraft-fillet-shell-lab@f384450:video/frames/section-SF-6.png",
+   "sha256": "21e1f8ab8fdda818adc3f2f4a8bb5fb66fb9ebc17a910f143d24499a43da3b61"
+  },
+  {
+   "path": "video/frames/iso-FS-10.png",
+   "pin": "solidcraft-fillet-shell-lab@f384450:video/frames/iso-FS-10.png",
+   "sha256": "32adbd075750e1186d25f951cc53bb80464b2766b460c8754fb1aa2ec9b60fc1"
+  },
+  {
+   "path": "video/frames/iso-shell-only.png",
+   "pin": "solidcraft-fillet-shell-lab@f384450:video/frames/iso-shell-only.png",
+   "sha256": "91bbc9597301bf4bdde93904ee4997daa16fc11bbc7d36720b97ab7e89ff0bb1"
+  }
+ ]
+}

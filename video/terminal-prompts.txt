@@ -1,0 +1,5 @@
+both: an open-top box, 80 x 60 x 30 mm,
+walls and floor 2 mm, corners 10 mm
+named adds one sentence:
+"Round the corners before you hollow it
+out."

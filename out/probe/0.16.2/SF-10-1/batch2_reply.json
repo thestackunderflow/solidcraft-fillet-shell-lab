@@ -1,0 +1,15 @@
+{
+ "isError": true,
+ "body": {
+  "completed": 0,
+  "failed": {
+   "command": "solid.fillet",
+   "error": "fillet: the rounds would leave openings in the surface (they overlap where a wall or a face is narrower than both); the largest radius that fits is 4 mm",
+   "index": 0
+  },
+  "ok": false,
+  "results": [],
+  "rolled_back": true,
+  "undone": 0
+ }
+}

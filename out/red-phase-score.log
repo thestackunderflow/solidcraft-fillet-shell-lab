@@ -1,0 +1,96 @@
+FFFFF                                                                    [100%]
+=================================== FAILURES ===================================
+___________________ test_shell_first_refused_then_reordered ____________________
+
+    def test_shell_first_refused_then_reordered():
+        rows = transcript([('batch', {'commands': BASE + [SHELL, fil(10)]}, REFUSED, True),
+                           ('batch', {'commands': BASE + [fil(10), SHELL]}, {'ok': True}, False)])
+>       s = score.analyse(rows)
+
+tests/test_score.py:39: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+rows = [{'dir': 'client->server', 'msg': {'id': 1, 'jsonrpc': '2.0', 'method': 'tools/call', 'params': {'arguments': {'comman...sg': {'id': 2, 'jsonrpc': '2.0', 'result': {'content': [{'text': '{"ok": true}', 'type': 'text'}], 'isError': False}}}]
+
+    def analyse(rows):
+>       raise NotImplementedError
+E       NotImplementedError
+
+claude-run/score.py:5: NotImplementedError
+_________________ test_shell_first_refused_then_offered_radius _________________
+
+    def test_shell_first_refused_then_offered_radius():
+        rows = transcript([('batch', {'commands': BASE + [SHELL, fil(10)]}, REFUSED, True),
+                           ('batch', {'commands': BASE + [SHELL, fil(6.82)]}, {'ok': True}, False)])
+>       s = score.analyse(rows)
+
+tests/test_score.py:49: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+rows = [{'dir': 'client->server', 'msg': {'id': 1, 'jsonrpc': '2.0', 'method': 'tools/call', 'params': {'arguments': {'comman...sg': {'id': 2, 'jsonrpc': '2.0', 'result': {'content': [{'text': '{"ok": true}', 'type': 'text'}], 'isError': False}}}]
+
+    def analyse(rows):
+>       raise NotImplementedError
+E       NotImplementedError
+
+claude-run/score.py:5: NotImplementedError
+_________________ test_execute_calls_count_too_and_fit_is_seen _________________
+
+    def test_execute_calls_count_too_and_fit_is_seen():
+        rows = transcript([('execute', {'command': 'solid.shell', 'params': SHELL['params']}, {'ok': True}, False),
+                           ('execute', fil(10), {'error': 'x'}, True),
+                           ('execute', fil(10, fit='reduce'), {'ok': True}, False)])
+>       s = score.analyse(rows)
+
+tests/test_score.py:58: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+rows = [{'dir': 'client->server', 'msg': {'id': 1, 'jsonrpc': '2.0', 'method': 'tools/call', 'params': {'arguments': {'comman...sg': {'id': 3, 'jsonrpc': '2.0', 'result': {'content': [{'text': '{"ok": true}', 'type': 'text'}], 'isError': False}}}]
+
+    def analyse(rows):
+>       raise NotImplementedError
+E       NotImplementedError
+
+claude-run/score.py:5: NotImplementedError
+______________________________ test_neither_route ______________________________
+
+    def test_neither_route():
+        rows = transcript([('batch', {'commands': [{'command': 'sketch.fillet', 'params': {'radius': 10}}]}, {'ok': True}, False)])
+>       s = score.analyse(rows)
+
+tests/test_score.py:64: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+rows = [{'dir': 'client->server', 'msg': {'id': 1, 'jsonrpc': '2.0', 'method': 'tools/call', 'params': {'arguments': {'comman...sg': {'id': 1, 'jsonrpc': '2.0', 'result': {'content': [{'text': '{"ok": true}', 'type': 'text'}], 'isError': False}}}]
+
+    def analyse(rows):
+>       raise NotImplementedError
+E       NotImplementedError
+
+claude-run/score.py:5: NotImplementedError
+______________________________ test_budget_total _______________________________
+
+tmp_path = PosixPath('/tmp/pytest-of-root/pytest-0/test_budget_total0')
+
+    def test_budget_total(tmp_path):
+        p = tmp_path / 'BUDGET.log'
+        p.write_text('plain-1\t0.21\tlogged\t0.2100\nnamed-1\t1.50\tkilled-floor\t1.7100\n')
+>       assert score.budget_total(str(p)) == 1.71
+
+tests/test_score.py:71: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+path = '/tmp/pytest-of-root/pytest-0/test_budget_total0/BUDGET.log'
+
+    def budget_total(path):
+>       raise NotImplementedError
+E       NotImplementedError
+
+claude-run/score.py:9: NotImplementedError
+=========================== short test summary info ============================
+FAILED tests/test_score.py::test_shell_first_refused_then_reordered - NotImpl...
+FAILED tests/test_score.py::test_shell_first_refused_then_offered_radius - No...
+FAILED tests/test_score.py::test_execute_calls_count_too_and_fit_is_seen - No...
+FAILED tests/test_score.py::test_neither_route - NotImplementedError
+FAILED tests/test_score.py::test_budget_total - NotImplementedError
+5 failed in 0.09s

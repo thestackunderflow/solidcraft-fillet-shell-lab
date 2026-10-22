@@ -1,0 +1,269 @@
+EEEEEEEEEEEEE..F                                                         [100%]
+==================================== ERRORS ====================================
+___________________ ERROR at setup of test_version_is_pinned ___________________
+
+    @pytest.fixture(scope='module')
+    def lab():
+>       s = cells.Lab('probe-cells')
+
+tests/test_probe_cells.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <cells.Lab object at 0x75da245e6d20>, name = 'probe-cells'
+log_path = None
+
+    def __init__(self, name, log_path=None):
+>       raise NotImplementedError
+E       NotImplementedError
+
+tests/cells.py:6: NotImplementedError
+_____________ ERROR at setup of test_fs10_builds_with_a_2_mm_wall ______________
+
+    @pytest.fixture(scope='module')
+    def lab():
+>       s = cells.Lab('probe-cells')
+
+tests/test_probe_cells.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <cells.Lab object at 0x75da245e6d20>, name = 'probe-cells'
+log_path = None
+
+    def __init__(self, name, log_path=None):
+>       raise NotImplementedError
+E       NotImplementedError
+
+tests/cells.py:6: NotImplementedError
+____________ ERROR at setup of test_sf10_is_refused_and_rolled_back ____________
+
+    @pytest.fixture(scope='module')
+    def lab():
+>       s = cells.Lab('probe-cells')
+
+tests/test_probe_cells.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <cells.Lab object at 0x75da245e6d20>, name = 'probe-cells'
+log_path = None
+
+    def __init__(self, name, log_path=None):
+>       raise NotImplementedError
+E       NotImplementedError
+
+tests/cells.py:6: NotImplementedError
+_ ERROR at setup of test_sf6_builds_a_third_of_a_millimetre_corner_with_no_warning _
+
+    @pytest.fixture(scope='module')
+    def lab():
+>       s = cells.Lab('probe-cells')
+
+tests/test_probe_cells.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <cells.Lab object at 0x75da245e6d20>, name = 'probe-cells'
+log_path = None
+
+    def __init__(self, name, log_path=None):
+>       raise NotImplementedError
+E       NotImplementedError
+
+tests/cells.py:6: NotImplementedError
+______ ERROR at setup of test_the_offered_radius_leaves_almost_no_corner _______
+
+    @pytest.fixture(scope='module')
+    def lab():
+>       s = cells.Lab('probe-cells')
+
+tests/test_probe_cells.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <cells.Lab object at 0x75da245e6d20>, name = 'probe-cells'
+log_path = None
+
+    def __init__(self, name, log_path=None):
+>       raise NotImplementedError
+E       NotImplementedError
+
+tests/cells.py:6: NotImplementedError
+_ ERROR at setup of test_live_equals_the_committed_probe_record[FS-10-1-FS-10] _
+
+    @pytest.fixture(scope='module')
+    def lab():
+>       s = cells.Lab('probe-cells')
+
+tests/test_probe_cells.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <cells.Lab object at 0x75da245e6d20>, name = 'probe-cells'
+log_path = None
+
+    def __init__(self, name, log_path=None):
+>       raise NotImplementedError
+E       NotImplementedError
+
+tests/cells.py:6: NotImplementedError
+_ ERROR at setup of test_live_equals_the_committed_probe_record[SF-10-1-SF-10] _
+
+    @pytest.fixture(scope='module')
+    def lab():
+>       s = cells.Lab('probe-cells')
+
+tests/test_probe_cells.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <cells.Lab object at 0x75da245e6d20>, name = 'probe-cells'
+log_path = None
+
+    def __init__(self, name, log_path=None):
+>       raise NotImplementedError
+E       NotImplementedError
+
+tests/cells.py:6: NotImplementedError
+__ ERROR at setup of test_live_equals_the_committed_probe_record[SF-6-1-SF-6] __
+
+    @pytest.fixture(scope='module')
+    def lab():
+>       s = cells.Lab('probe-cells')
+
+tests/test_probe_cells.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <cells.Lab object at 0x75da245e6d20>, name = 'probe-cells'
+log_path = None
+
+    def __init__(self, name, log_path=None):
+>       raise NotImplementedError
+E       NotImplementedError
+
+tests/cells.py:6: NotImplementedError
+_ ERROR at setup of test_live_equals_the_committed_probe_record[SF-offered-1-SF-6.82] _
+
+    @pytest.fixture(scope='module')
+    def lab():
+>       s = cells.Lab('probe-cells')
+
+tests/test_probe_cells.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <cells.Lab object at 0x75da245e6d20>, name = 'probe-cells'
+log_path = None
+
+    def __init__(self, name, log_path=None):
+>       raise NotImplementedError
+E       NotImplementedError
+
+tests/cells.py:6: NotImplementedError
+_ ERROR at setup of test_the_file_is_exactly_the_batch_arguments[shell-then-fillet] _
+
+    @pytest.fixture(scope='module')
+    def sent():
+        os.makedirs(OUT, exist_ok=True)
+        res = {}
+        for name in (A, B):
+>           lab = cells.Lab(name, log_path=os.path.join(OUT, f'batch-{name}.jsonl'))
+
+tests/test_steps_files.py:28: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <cells.Lab object at 0x75da230f91f0>, name = 'shell-then-fillet'
+log_path = '/work/tests/../out/steps/batch-shell-then-fillet.jsonl'
+
+    def __init__(self, name, log_path=None):
+>       raise NotImplementedError
+E       NotImplementedError
+
+tests/cells.py:6: NotImplementedError
+_ ERROR at setup of test_the_file_is_exactly_the_batch_arguments[fillet-then-shell] _
+
+    @pytest.fixture(scope='module')
+    def sent():
+        os.makedirs(OUT, exist_ok=True)
+        res = {}
+        for name in (A, B):
+>           lab = cells.Lab(name, log_path=os.path.join(OUT, f'batch-{name}.jsonl'))
+
+tests/test_steps_files.py:28: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <cells.Lab object at 0x75da230f91f0>, name = 'shell-then-fillet'
+log_path = '/work/tests/../out/steps/batch-shell-then-fillet.jsonl'
+
+    def __init__(self, name, log_path=None):
+>       raise NotImplementedError
+E       NotImplementedError
+
+tests/cells.py:6: NotImplementedError
+_________ ERROR at setup of test_shell_first_is_refused_at_the_fillet __________
+
+    @pytest.fixture(scope='module')
+    def sent():
+        os.makedirs(OUT, exist_ok=True)
+        res = {}
+        for name in (A, B):
+>           lab = cells.Lab(name, log_path=os.path.join(OUT, f'batch-{name}.jsonl'))
+
+tests/test_steps_files.py:28: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <cells.Lab object at 0x75da230f91f0>, name = 'shell-then-fillet'
+log_path = '/work/tests/../out/steps/batch-shell-then-fillet.jsonl'
+
+    def __init__(self, name, log_path=None):
+>       raise NotImplementedError
+E       NotImplementedError
+
+tests/cells.py:6: NotImplementedError
+__________________ ERROR at setup of test_fillet_first_builds __________________
+
+    @pytest.fixture(scope='module')
+    def sent():
+        os.makedirs(OUT, exist_ok=True)
+        res = {}
+        for name in (A, B):
+>           lab = cells.Lab(name, log_path=os.path.join(OUT, f'batch-{name}.jsonl'))
+
+tests/test_steps_files.py:28: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <cells.Lab object at 0x75da230f91f0>, name = 'shell-then-fillet'
+log_path = '/work/tests/../out/steps/batch-shell-then-fillet.jsonl'
+
+    def __init__(self, name, log_path=None):
+>       raise NotImplementedError
+E       NotImplementedError
+
+tests/cells.py:6: NotImplementedError
+=================================== FAILURES ===================================
+___________________________ test_set_parameter_wall ____________________________
+
+    def test_set_parameter_wall():
+        os.makedirs(OUT, exist_ok=True)
+>       lab = cells.Lab('set-parameter', log_path=os.path.join(OUT, 'transcript.jsonl'))
+
+tests/test_set_parameter.py:13: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <cells.Lab object at 0x75da22781bb0>, name = 'set-parameter'
+log_path = '/work/tests/../out/set_parameter/transcript.jsonl'
+
+    def __init__(self, name, log_path=None):
+>       raise NotImplementedError
+E       NotImplementedError
+
+tests/cells.py:6: NotImplementedError
+=========================== short test summary info ============================
+FAILED tests/test_set_parameter.py::test_set_parameter_wall - NotImplementedE...
+ERROR tests/test_probe_cells.py::test_version_is_pinned - NotImplementedError
+ERROR tests/test_probe_cells.py::test_fs10_builds_with_a_2_mm_wall - NotImple...
+ERROR tests/test_probe_cells.py::test_sf10_is_refused_and_rolled_back - NotIm...
+ERROR tests/test_probe_cells.py::test_sf6_builds_a_third_of_a_millimetre_corner_with_no_warning
+ERROR tests/test_probe_cells.py::test_the_offered_radius_leaves_almost_no_corner
+ERROR tests/test_probe_cells.py::test_live_equals_the_committed_probe_record[FS-10-1-FS-10]
+ERROR tests/test_probe_cells.py::test_live_equals_the_committed_probe_record[SF-10-1-SF-10]
+ERROR tests/test_probe_cells.py::test_live_equals_the_committed_probe_record[SF-6-1-SF-6]
+ERROR tests/test_probe_cells.py::test_live_equals_the_committed_probe_record[SF-offered-1-SF-6.82]
+ERROR tests/test_steps_files.py::test_the_file_is_exactly_the_batch_arguments[shell-then-fillet]
+ERROR tests/test_steps_files.py::test_the_file_is_exactly_the_batch_arguments[fillet-then-shell]
+ERROR tests/test_steps_files.py::test_shell_first_is_refused_at_the_fillet - ...
+ERROR tests/test_steps_files.py::test_fillet_first_builds - NotImplementedError
+1 failed, 2 passed, 13 errors in 1.21s

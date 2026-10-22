@@ -1,0 +1,26 @@
+{
+ "triangles": 2792,
+ "bbox_min": [
+  -40.0,
+  -30.0,
+  0.0
+ ],
+ "bbox_max": [
+  40.0,
+  30.0,
+  30.0
+ ],
+ "size": [
+  80.0,
+  60.0,
+  30.0
+ ],
+ "volume_mm3": 135284.372,
+ "corner_wall": {
+  "status": "BREACHED",
+  "wall_mm": 0.0,
+  "loops": 1,
+  "z": 15.0,
+  "corners": []
+ }
+}

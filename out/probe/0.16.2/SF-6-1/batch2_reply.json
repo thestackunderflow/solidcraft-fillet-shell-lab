@@ -1,0 +1,15 @@
+{
+ "isError": true,
+ "body": {
+  "completed": 0,
+  "failed": {
+   "command": "solid.fillet",
+   "error": "not supported yet: 6 mm is too large for this fillet: it runs past the faces beside the edge into other geometry; the largest radius that fits is 4 mm",
+   "index": 0
+  },
+  "ok": false,
+  "results": [],
+  "rolled_back": true,
+  "undone": 0
+ }
+}

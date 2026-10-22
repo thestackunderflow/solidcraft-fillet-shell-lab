@@ -1,0 +1,4 @@
+SolidCraft 0.17
+1. Round first, then shell
+2. Its offered radius can be too thin
+3. Measure the wall

@@ -1,0 +1,66 @@
+FF                                                                       [100%]
+=================================== FAILURES ===================================
+_____________________ test_watchdog_writes_hang_and_exits ______________________
+
+    def test_watchdog_writes_hang_and_exits():
+        with tempfile.TemporaryDirectory() as d:
+            log = os.path.join(d, 't.jsonl')
+            p = subprocess.Popen([sys.executable, PROXY, '--log', log, '--watchdog', '2', '--', sys.executable, FAKE],
+                                 stdin=subprocess.PIPE, stdout=subprocess.PIPE, text=True)
+            p.stdin.write(json.dumps({'jsonrpc': '2.0', 'id': 1, 'method': 'initialize', 'params': {}}) + '\n')
+            p.stdin.flush()
+>           assert json.loads(p.stdout.readline())['id'] == 1          # answered: no HANG for it
+
+tests/test_proxy_watchdog.py:22: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/usr/lib/python3.12/json/__init__.py:346: in loads
+    return _default_decoder.decode(s)
+/usr/lib/python3.12/json/decoder.py:337: in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <json.decoder.JSONDecoder object at 0x7c7259904380>, s = '', idx = 0
+
+    def raw_decode(self, s, idx=0):
+        """Decode a JSON document from ``s`` (a ``str`` beginning with
+        a JSON document) and return a 2-tuple of the Python
+        representation and the index in ``s`` where the document ended.
+    
+        This can be used to decode a JSON document from a string that may
+        have extraneous data at the end.
+    
+        """
+        try:
+            obj, end = self.scan_once(s, idx)
+        except StopIteration as err:
+>           raise JSONDecodeError("Expecting value", s, err.value) from None
+E           json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+/usr/lib/python3.12/json/decoder.py:355: JSONDecodeError
+----------------------------- Captured stderr call -----------------------------
+usage: mcp_log_proxy.py [-h] --log LOG [--png-dir PNG_DIR] ...
+mcp_log_proxy.py: error: unrecognized arguments: --watchdog
+____________________ test_no_watchdog_row_when_replies_come ____________________
+
+    def test_no_watchdog_row_when_replies_come():
+        with tempfile.TemporaryDirectory() as d:
+            log = os.path.join(d, 't.jsonl')
+            p = subprocess.Popen([sys.executable, PROXY, '--log', log, '--watchdog', '2', '--', sys.executable, FAKE],
+                                 stdin=subprocess.PIPE, stdout=subprocess.PIPE, text=True)
+            p.stdin.write(json.dumps({'jsonrpc': '2.0', 'id': 1, 'method': 'initialize', 'params': {}}) + '\n')
+            p.stdin.flush()
+            p.stdout.readline()
+            time.sleep(3)
+            p.stdin.close()
+            p.wait(timeout=10)
+>           rows = [json.loads(l) for l in open(log, encoding='utf-8')]
+E           FileNotFoundError: [Errno 2] No such file or directory: '/tmp/tmphxkx8zpy/t.jsonl'
+
+tests/test_proxy_watchdog.py:48: FileNotFoundError
+----------------------------- Captured stderr call -----------------------------
+usage: mcp_log_proxy.py [-h] --log LOG [--png-dir PNG_DIR] ...
+mcp_log_proxy.py: error: unrecognized arguments: --watchdog
+=========================== short test summary info ============================
+FAILED tests/test_proxy_watchdog.py::test_watchdog_writes_hang_and_exits - js...
+FAILED tests/test_proxy_watchdog.py::test_no_watchdog_row_when_replies_come
+2 failed in 3.14s

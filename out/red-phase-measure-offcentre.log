@@ -1,0 +1,38 @@
+.................................FF                                      [100%]
+=================================== FAILURES ===================================
+______________________ test_pt2_off_centre_box[fs-10-2.0] ______________________
+
+kind = 'fs', r = 10, expected = 2.0
+
+    @pytest.mark.parametrize('kind,r,expected', [('fs', 10, 2.000), ('sf', 6, g2(6))])
+    def test_pt2_off_centre_box(kind, r, expected):
+        """A box with one corner at the origin (how the agent runs drew it), not centred on it."""
+        mesh = (synth.fs_box if kind == 'fs' else synth.sf_box)(r, chords=8) + [40.0, 30.0, 0.0]
+        m = corner_wall(mesh, z=15.0)
+>       assert m['wall_mm'] == pytest.approx(expected, abs=0.005)
+E       assert 1.7819 == 2.0 ± 5.0e-03
+E         comparison failed
+E         Obtained: 1.7819
+E         Expected: 2.0 ± 5.0e-03
+
+tests/test_measure.py:90: AssertionError
+_______________ test_pt2_off_centre_box[sf-6-0.3431457505076194] _______________
+
+kind = 'sf', r = 6, expected = 0.3431457505076194
+
+    @pytest.mark.parametrize('kind,r,expected', [('fs', 10, 2.000), ('sf', 6, g2(6))])
+    def test_pt2_off_centre_box(kind, r, expected):
+        """A box with one corner at the origin (how the agent runs drew it), not centred on it."""
+        mesh = (synth.fs_box if kind == 'fs' else synth.sf_box)(r, chords=8) + [40.0, 30.0, 0.0]
+        m = corner_wall(mesh, z=15.0)
+>       assert m['wall_mm'] == pytest.approx(expected, abs=0.005)
+E       assert -0.0525 == 0.3431457505076194 ± 5.0e-03
+E         comparison failed
+E         Obtained: -0.0525
+E         Expected: 0.3431457505076194 ± 5.0e-03
+
+tests/test_measure.py:90: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_measure.py::test_pt2_off_centre_box[fs-10-2.0] - assert 1.7...
+FAILED tests/test_measure.py::test_pt2_off_centre_box[sf-6-0.3431457505076194]
+2 failed, 33 passed in 0.25s

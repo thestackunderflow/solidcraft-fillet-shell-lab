@@ -1,0 +1,55 @@
+{
+ "triangles": 28,
+ "bbox_min": [
+  -40.0,
+  -30.0,
+  0.0
+ ],
+ "bbox_max": [
+  40.0,
+  30.0,
+  30.0
+ ],
+ "size": [
+  80.0,
+  60.0,
+  30.0
+ ],
+ "volume_mm3": 24832.0,
+ "corner_wall": {
+  "status": "OK",
+  "wall_mm": 2.0,
+  "straight_wall_mm": 2.0,
+  "z": 15.0,
+  "corners": [
+   {
+    "corner": [
+     1,
+     1
+    ],
+    "outer": "sharp"
+   },
+   {
+    "corner": [
+     -1,
+     1
+    ],
+    "outer": "sharp"
+   },
+   {
+    "corner": [
+     -1,
+     -1
+    ],
+    "outer": "sharp"
+   },
+   {
+    "corner": [
+     1,
+     -1
+    ],
+    "outer": "sharp"
+   }
+  ]
+ }
+}

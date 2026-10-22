@@ -1,0 +1,867 @@
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF.FFFFFF                                    [100%]
+==================================== ERRORS ====================================
+________________ ERROR collecting tests/test_client_timeout.py _________________
+ImportError while importing test module '/work/tests/test_client_timeout.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+tests/test_client_timeout.py:9: in <module>
+    from mcp_client import Hang, McpClient
+E   ImportError: cannot import name 'Hang' from 'mcp_client' (/work/tests/mcp_client.py)
+=================================== FAILURES ===================================
+__________________ test_pt1_shelled_volume_matches_fs_mesh[1] __________________
+
+r = 1
+
+    @pytest.mark.parametrize('r', [1, 2, 6, 10, 25])
+    def test_pt1_shelled_volume_matches_fs_mesh(r):
+        mesh = synth.fs_box(r, chords=64)
+>       assert volume(mesh) == pytest.approx(shelled_volume(80, 60, 30, r, 2), rel=1e-4)
+
+tests/test_measure.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+tris = array([[[ 4.00000000e+01,  2.90000000e+01,  0.00000000e+00],
+        [ 3.99996988e+01,  2.90245412e+01,  0.00000000e+0...    [ 3.80000000e+01,  2.80000000e+01,  2.00000000e+00],
+        [ 0.00000000e+00,  0.00000000e+00,  2.00000000e+00]]])
+
+    def volume(tris):
+>       raise NotImplementedError
+E       NotImplementedError
+
+tests/measure_box.py:9: NotImplementedError
+__________________ test_pt1_shelled_volume_matches_fs_mesh[2] __________________
+
+r = 2
+
+    @pytest.mark.parametrize('r', [1, 2, 6, 10, 25])
+    def test_pt1_shelled_volume_matches_fs_mesh(r):
+        mesh = synth.fs_box(r, chords=64)
+>       assert volume(mesh) == pytest.approx(shelled_volume(80, 60, 30, r, 2), rel=1e-4)
+
+tests/test_measure.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+tris = array([[[ 4.00000000e+01,  2.80000000e+01,  0.00000000e+00],
+        [ 3.99993976e+01,  2.80490825e+01,  0.00000000e+0...    [ 3.80000000e+01,  2.80000000e+01,  2.00000000e+00],
+        [ 0.00000000e+00,  0.00000000e+00,  2.00000000e+00]]])
+
+    def volume(tris):
+>       raise NotImplementedError
+E       NotImplementedError
+
+tests/measure_box.py:9: NotImplementedError
+__________________ test_pt1_shelled_volume_matches_fs_mesh[6] __________________
+
+r = 6
+
+    @pytest.mark.parametrize('r', [1, 2, 6, 10, 25])
+    def test_pt1_shelled_volume_matches_fs_mesh(r):
+        mesh = synth.fs_box(r, chords=64)
+>       assert volume(mesh) == pytest.approx(shelled_volume(80, 60, 30, r, 2), rel=1e-4)
+
+tests/test_measure.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+tris = array([[[ 4.00000000e+01,  2.40000000e+01,  0.00000000e+00],
+        [ 3.99981929e+01,  2.41472474e+01,  0.00000000e+0...    [ 3.80000000e+01,  2.40000000e+01,  2.00000000e+00],
+        [-5.19242768e-16, -4.78249918e-16,  2.00000000e+00]]])
+
+    def volume(tris):
+>       raise NotImplementedError
+E       NotImplementedError
+
+tests/measure_box.py:9: NotImplementedError
+_________________ test_pt1_shelled_volume_matches_fs_mesh[10] __________________
+
+r = 10
+
+    @pytest.mark.parametrize('r', [1, 2, 6, 10, 25])
+    def test_pt1_shelled_volume_matches_fs_mesh(r):
+        mesh = synth.fs_box(r, chords=64)
+>       assert volume(mesh) == pytest.approx(shelled_volume(80, 60, 30, r, 2), rel=1e-4)
+
+tests/test_measure.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+tris = array([[[ 4.00000000e+01,  2.00000000e+01,  0.00000000e+00],
+        [ 3.99969882e+01,  2.02454123e+01,  0.00000000e+0...    [ 3.80000000e+01,  2.00000000e+01,  2.00000000e+00],
+        [-2.73285668e-16,  8.47185570e-16,  2.00000000e+00]]])
+
+    def volume(tris):
+>       raise NotImplementedError
+E       NotImplementedError
+
+tests/measure_box.py:9: NotImplementedError
+_________________ test_pt1_shelled_volume_matches_fs_mesh[25] __________________
+
+r = 25
+
+    @pytest.mark.parametrize('r', [1, 2, 6, 10, 25])
+    def test_pt1_shelled_volume_matches_fs_mesh(r):
+        mesh = synth.fs_box(r, chords=64)
+>       assert volume(mesh) == pytest.approx(shelled_volume(80, 60, 30, r, 2), rel=1e-4)
+
+tests/test_measure.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+tris = array([[[ 4.00000000e+01,  5.00000000e+00,  0.00000000e+00],
+        [ 3.99924705e+01,  5.61353071e+00,  0.00000000e+0...    [ 3.80000000e+01,  5.00000000e+00,  2.00000000e+00],
+        [ 1.47574261e-15,  4.57753493e-16,  2.00000000e+00]]])
+
+    def volume(tris):
+>       raise NotImplementedError
+E       NotImplementedError
+
+tests/measure_box.py:9: NotImplementedError
+____________________ test_pt1_sf_volume_matches_sf_mesh[2] _____________________
+
+r = 2
+
+    @pytest.mark.parametrize('r', [2, 4, 5, 6, 6.5])
+    def test_pt1_sf_volume_matches_sf_mesh(r):
+        mesh = synth.sf_box(r, chords=64)
+>       assert volume(mesh) == pytest.approx(sf_volume(80, 60, 30, r, 2), rel=1e-4)
+
+tests/test_measure.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+tris = array([[[ 4.00000000e+01,  2.80000000e+01,  0.00000000e+00],
+        [ 3.99993976e+01,  2.80490825e+01,  0.00000000e+0...    [ 3.80000000e+01,  2.80000000e+01,  2.00000000e+00],
+        [ 0.00000000e+00,  0.00000000e+00,  2.00000000e+00]]])
+
+    def volume(tris):
+>       raise NotImplementedError
+E       NotImplementedError
+
+tests/measure_box.py:9: NotImplementedError
+____________________ test_pt1_sf_volume_matches_sf_mesh[4] _____________________
+
+r = 4
+
+    @pytest.mark.parametrize('r', [2, 4, 5, 6, 6.5])
+    def test_pt1_sf_volume_matches_sf_mesh(r):
+        mesh = synth.sf_box(r, chords=64)
+>       assert volume(mesh) == pytest.approx(sf_volume(80, 60, 30, r, 2), rel=1e-4)
+
+tests/test_measure.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+tris = array([[[ 4.00000000e+01,  2.60000000e+01,  0.00000000e+00],
+        [ 3.99987953e+01,  2.60981649e+01,  0.00000000e+0...    [ 3.80000000e+01,  2.80000000e+01,  2.00000000e+00],
+        [ 0.00000000e+00,  0.00000000e+00,  2.00000000e+00]]])
+
+    def volume(tris):
+>       raise NotImplementedError
+E       NotImplementedError
+
+tests/measure_box.py:9: NotImplementedError
+____________________ test_pt1_sf_volume_matches_sf_mesh[5] _____________________
+
+r = 5
+
+    @pytest.mark.parametrize('r', [2, 4, 5, 6, 6.5])
+    def test_pt1_sf_volume_matches_sf_mesh(r):
+        mesh = synth.sf_box(r, chords=64)
+>       assert volume(mesh) == pytest.approx(sf_volume(80, 60, 30, r, 2), rel=1e-4)
+
+tests/test_measure.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+tris = array([[[ 4.00000000e+01,  2.50000000e+01,  0.00000000e+00],
+        [ 3.99984941e+01,  2.51227061e+01,  0.00000000e+0...    [ 3.80000000e+01,  2.80000000e+01,  2.00000000e+00],
+        [ 0.00000000e+00,  0.00000000e+00,  2.00000000e+00]]])
+
+    def volume(tris):
+>       raise NotImplementedError
+E       NotImplementedError
+
+tests/measure_box.py:9: NotImplementedError
+____________________ test_pt1_sf_volume_matches_sf_mesh[6] _____________________
+
+r = 6
+
+    @pytest.mark.parametrize('r', [2, 4, 5, 6, 6.5])
+    def test_pt1_sf_volume_matches_sf_mesh(r):
+        mesh = synth.sf_box(r, chords=64)
+>       assert volume(mesh) == pytest.approx(sf_volume(80, 60, 30, r, 2), rel=1e-4)
+
+tests/test_measure.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+tris = array([[[ 4.00000000e+01,  2.40000000e+01,  0.00000000e+00],
+        [ 3.99981929e+01,  2.41472474e+01,  0.00000000e+0...    [ 3.80000000e+01,  2.80000000e+01,  2.00000000e+00],
+        [ 0.00000000e+00,  0.00000000e+00,  2.00000000e+00]]])
+
+    def volume(tris):
+>       raise NotImplementedError
+E       NotImplementedError
+
+tests/measure_box.py:9: NotImplementedError
+___________________ test_pt1_sf_volume_matches_sf_mesh[6.5] ____________________
+
+r = 6.5
+
+    @pytest.mark.parametrize('r', [2, 4, 5, 6, 6.5])
+    def test_pt1_sf_volume_matches_sf_mesh(r):
+        mesh = synth.sf_box(r, chords=64)
+>       assert volume(mesh) == pytest.approx(sf_volume(80, 60, 30, r, 2), rel=1e-4)
+
+tests/test_measure.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+tris = array([[[ 4.00000000e+01,  2.35000000e+01,  0.00000000e+00],
+        [ 3.99980423e+01,  2.36595180e+01,  0.00000000e+0...    [ 3.80000000e+01,  2.80000000e+01,  2.00000000e+00],
+        [ 0.00000000e+00,  0.00000000e+00,  2.00000000e+00]]])
+
+    def volume(tris):
+>       raise NotImplementedError
+E       NotImplementedError
+
+tests/measure_box.py:9: NotImplementedError
+____________________________ test_pt1_known_values _____________________________
+
+    def test_pt1_known_values():
+        # ACCURACY G1 / G3 (re-derived by the accuracy reviewer)
+>       assert shelled_volume(80, 60, 30, 6, 2) == pytest.approx(24289.49, abs=0.01)
+
+tests/test_measure.py:34: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+w = 80, d = 60, h = 30, r = 6, t = 2
+
+    def shelled_volume(w, d, h, r, t):
+>       raise NotImplementedError
+E       NotImplementedError
+
+tests/measure_box.py:13: NotImplementedError
+_________________ test_pt1_sf_volume_refuses_a_breached_radius _________________
+
+    def test_pt1_sf_volume_refuses_a_breached_radius():
+        with pytest.raises(ValueError):
+>           sf_volume(80, 60, 30, 7, 2)
+
+tests/test_measure.py:42: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+w = 80, d = 60, h = 30, r = 7, t = 2
+
+    def sf_volume(w, d, h, r, t):
+>       raise NotImplementedError
+E       NotImplementedError
+
+tests/measure_box.py:17: NotImplementedError
+_______________________ test_pt2_corner_wall[fs-6-2.0-4] _______________________
+
+kind = 'fs', r = 6, expected = 2.0, chords = 4
+
+    @pytest.mark.parametrize('chords', [4, 8, 16])
+    @pytest.mark.parametrize('kind,r,expected', [
+        ('fs', 6, 2.000), ('fs', 10, 2.000),
+        ('sf', 3, g2(3)), ('sf', 5, g2(5)), ('sf', 6, g2(6)), ('sf', 2, 2.000),
+    ])
+    def test_pt2_corner_wall(kind, r, expected, chords):
+        mesh = (synth.fs_box if kind == 'fs' else synth.sf_box)(r, chords=chords)
+>       m = corner_wall(mesh, z=15.0)
+
+tests/test_measure.py:53: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+tris = array([[[ 4.00000000e+01,  2.40000000e+01,  0.00000000e+00],
+        [ 3.95432772e+01,  2.62961006e+01,  0.00000000e+0...    [ 3.80000000e+01,  2.40000000e+01,  2.00000000e+00],
+        [ 0.00000000e+00,  0.00000000e+00,  2.00000000e+00]]])
+z = 15.0
+
+    def corner_wall(tris, z=15.0):
+>       raise NotImplementedError
+E       NotImplementedError
+
+tests/measure_box.py:21: NotImplementedError
+_______________________ test_pt2_corner_wall[fs-6-2.0-8] _______________________
+
+kind = 'fs', r = 6, expected = 2.0, chords = 8
+
+    @pytest.mark.parametrize('chords', [4, 8, 16])
+    @pytest.mark.parametrize('kind,r,expected', [
+        ('fs', 6, 2.000), ('fs', 10, 2.000),
+        ('sf', 3, g2(3)), ('sf', 5, g2(5)), ('sf', 6, g2(6)), ('sf', 2, 2.000),
+    ])
+    def test_pt2_corner_wall(kind, r, expected, chords):
+        mesh = (synth.fs_box if kind == 'fs' else synth.sf_box)(r, chords=chords)
+>       m = corner_wall(mesh, z=15.0)
+
+tests/test_measure.py:53: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+tris = array([[[ 4.00000000e+01,  2.40000000e+01,  0.00000000e+00],
+        [ 3.98847117e+01,  2.51705419e+01,  0.00000000e+0...    [ 3.80000000e+01,  2.40000000e+01,  2.00000000e+00],
+        [-5.92118946e-16,  9.86864911e-17,  2.00000000e+00]]])
+z = 15.0
+
+    def corner_wall(tris, z=15.0):
+>       raise NotImplementedError
+E       NotImplementedError
+
+tests/measure_box.py:21: NotImplementedError
+______________________ test_pt2_corner_wall[fs-6-2.0-16] _______________________
+
+kind = 'fs', r = 6, expected = 2.0, chords = 16
+
+    @pytest.mark.parametrize('chords', [4, 8, 16])
+    @pytest.mark.parametrize('kind,r,expected', [
+        ('fs', 6, 2.000), ('fs', 10, 2.000),
+        ('sf', 3, g2(3)), ('sf', 5, g2(5)), ('sf', 6, g2(6)), ('sf', 2, 2.000),
+    ])
+    def test_pt2_corner_wall(kind, r, expected, chords):
+        mesh = (synth.fs_box if kind == 'fs' else synth.sf_box)(r, chords=chords)
+>       m = corner_wall(mesh, z=15.0)
+
+tests/test_measure.py:53: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+tris = array([[[ 4.00000000e+01,  2.40000000e+01,  0.00000000e+00],
+        [ 3.99711084e+01,  2.45881028e+01,  0.00000000e+0...    [ 3.80000000e+01,  2.40000000e+01,  2.00000000e+00],
+        [-1.46288210e-15,  1.20165316e-15,  2.00000000e+00]]])
+z = 15.0
+
+    def corner_wall(tris, z=15.0):
+>       raise NotImplementedError
+E       NotImplementedError
+
+tests/measure_box.py:21: NotImplementedError
+______________________ test_pt2_corner_wall[fs-10-2.0-4] _______________________
+
+kind = 'fs', r = 10, expected = 2.0, chords = 4
+
+    @pytest.mark.parametrize('chords', [4, 8, 16])
+    @pytest.mark.parametrize('kind,r,expected', [
+        ('fs', 6, 2.000), ('fs', 10, 2.000),
+        ('sf', 3, g2(3)), ('sf', 5, g2(5)), ('sf', 6, g2(6)), ('sf', 2, 2.000),
+    ])
+    def test_pt2_corner_wall(kind, r, expected, chords):
+        mesh = (synth.fs_box if kind == 'fs' else synth.sf_box)(r, chords=chords)
+>       m = corner_wall(mesh, z=15.0)
+
+tests/test_measure.py:53: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+tris = array([[[ 4.00000000e+01,  2.00000000e+01,  0.00000000e+00],
+        [ 3.92387953e+01,  2.38268343e+01,  0.00000000e+0...    [ 3.80000000e+01,  2.00000000e+01,  2.00000000e+00],
+        [ 3.55271368e-16, -1.77635684e-16,  2.00000000e+00]]])
+z = 15.0
+
+    def corner_wall(tris, z=15.0):
+>       raise NotImplementedError
+E       NotImplementedError
+
+tests/measure_box.py:21: NotImplementedError
+______________________ test_pt2_corner_wall[fs-10-2.0-8] _______________________
+
+kind = 'fs', r = 10, expected = 2.0, chords = 8
+
+    @pytest.mark.parametrize('chords', [4, 8, 16])
+    @pytest.mark.parametrize('kind,r,expected', [
+        ('fs', 6, 2.000), ('fs', 10, 2.000),
+        ('sf', 3, g2(3)), ('sf', 5, g2(5)), ('sf', 6, g2(6)), ('sf', 2, 2.000),
+    ])
+    def test_pt2_corner_wall(kind, r, expected, chords):
+        mesh = (synth.fs_box if kind == 'fs' else synth.sf_box)(r, chords=chords)
+>       m = corner_wall(mesh, z=15.0)
+
+tests/test_measure.py:53: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+tris = array([[[ 4.00000000e+01,  2.00000000e+01,  0.00000000e+00],
+        [ 3.98078528e+01,  2.19509032e+01,  0.00000000e+0...    [ 3.80000000e+01,  2.00000000e+01,  2.00000000e+00],
+        [ 3.94745964e-16, -1.48029737e-15,  2.00000000e+00]]])
+z = 15.0
+
+    def corner_wall(tris, z=15.0):
+>       raise NotImplementedError
+E       NotImplementedError
+
+tests/measure_box.py:21: NotImplementedError
+______________________ test_pt2_corner_wall[fs-10-2.0-16] ______________________
+
+kind = 'fs', r = 10, expected = 2.0, chords = 16
+
+    @pytest.mark.parametrize('chords', [4, 8, 16])
+    @pytest.mark.parametrize('kind,r,expected', [
+        ('fs', 6, 2.000), ('fs', 10, 2.000),
+        ('sf', 3, g2(3)), ('sf', 5, g2(5)), ('sf', 6, g2(6)), ('sf', 2, 2.000),
+    ])
+    def test_pt2_corner_wall(kind, r, expected, chords):
+        mesh = (synth.fs_box if kind == 'fs' else synth.sf_box)(r, chords=chords)
+>       m = corner_wall(mesh, z=15.0)
+
+tests/test_measure.py:53: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+tris = array([[[ 4.00000000e+01,  2.00000000e+01,  0.00000000e+00],
+        [ 3.99518473e+01,  2.09801714e+01,  0.00000000e+0...    [ 3.80000000e+01,  2.00000000e+01,  2.00000000e+00],
+        [-9.40424209e-16,  8.35932630e-16,  2.00000000e+00]]])
+z = 15.0
+
+    def corner_wall(tris, z=15.0):
+>       raise NotImplementedError
+E       NotImplementedError
+
+tests/measure_box.py:21: NotImplementedError
+_______________ test_pt2_corner_wall[sf-3-1.5857864376269049-4] ________________
+
+kind = 'sf', r = 3, expected = 1.5857864376269049, chords = 4
+
+    @pytest.mark.parametrize('chords', [4, 8, 16])
+    @pytest.mark.parametrize('kind,r,expected', [
+        ('fs', 6, 2.000), ('fs', 10, 2.000),
+        ('sf', 3, g2(3)), ('sf', 5, g2(5)), ('sf', 6, g2(6)), ('sf', 2, 2.000),
+    ])
+    def test_pt2_corner_wall(kind, r, expected, chords):
+        mesh = (synth.fs_box if kind == 'fs' else synth.sf_box)(r, chords=chords)
+>       m = corner_wall(mesh, z=15.0)
+
+tests/test_measure.py:53: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+tris = array([[[ 4.00000000e+01,  2.70000000e+01,  0.00000000e+00],
+        [ 3.97716386e+01,  2.81480503e+01,  0.00000000e+0...    [ 3.80000000e+01,  2.80000000e+01,  2.00000000e+00],
+        [ 0.00000000e+00,  0.00000000e+00,  2.00000000e+00]]])
+z = 15.0
+
+    def corner_wall(tris, z=15.0):
+>       raise NotImplementedError
+E       NotImplementedError
+
+tests/measure_box.py:21: NotImplementedError
+_______________ test_pt2_corner_wall[sf-3-1.5857864376269049-8] ________________
+
+kind = 'sf', r = 3, expected = 1.5857864376269049, chords = 8
+
+    @pytest.mark.parametrize('chords', [4, 8, 16])
+    @pytest.mark.parametrize('kind,r,expected', [
+        ('fs', 6, 2.000), ('fs', 10, 2.000),
+        ('sf', 3, g2(3)), ('sf', 5, g2(5)), ('sf', 6, g2(6)), ('sf', 2, 2.000),
+    ])
+    def test_pt2_corner_wall(kind, r, expected, chords):
+        mesh = (synth.fs_box if kind == 'fs' else synth.sf_box)(r, chords=chords)
+>       m = corner_wall(mesh, z=15.0)
+
+tests/test_measure.py:53: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+tris = array([[[ 4.00000000e+01,  2.70000000e+01,  0.00000000e+00],
+        [ 3.99423558e+01,  2.75852710e+01,  0.00000000e+0...    [ 3.80000000e+01,  2.80000000e+01,  2.00000000e+00],
+        [ 0.00000000e+00,  0.00000000e+00,  2.00000000e+00]]])
+z = 15.0
+
+    def corner_wall(tris, z=15.0):
+>       raise NotImplementedError
+E       NotImplementedError
+
+tests/measure_box.py:21: NotImplementedError
+_______________ test_pt2_corner_wall[sf-3-1.5857864376269049-16] _______________
+
+kind = 'sf', r = 3, expected = 1.5857864376269049, chords = 16
+
+    @pytest.mark.parametrize('chords', [4, 8, 16])
+    @pytest.mark.parametrize('kind,r,expected', [
+        ('fs', 6, 2.000), ('fs', 10, 2.000),
+        ('sf', 3, g2(3)), ('sf', 5, g2(5)), ('sf', 6, g2(6)), ('sf', 2, 2.000),
+    ])
+    def test_pt2_corner_wall(kind, r, expected, chords):
+        mesh = (synth.fs_box if kind == 'fs' else synth.sf_box)(r, chords=chords)
+>       m = corner_wall(mesh, z=15.0)
+
+tests/test_measure.py:53: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+tris = array([[[ 4.00000000e+01,  2.70000000e+01,  0.00000000e+00],
+        [ 3.99855542e+01,  2.72940514e+01,  0.00000000e+0...    [ 3.80000000e+01,  2.80000000e+01,  2.00000000e+00],
+        [ 0.00000000e+00,  0.00000000e+00,  2.00000000e+00]]])
+z = 15.0
+
+    def corner_wall(tris, z=15.0):
+>       raise NotImplementedError
+E       NotImplementedError
+
+tests/measure_box.py:21: NotImplementedError
+_______________ test_pt2_corner_wall[sf-5-0.7573593128807143-4] ________________
+
+kind = 'sf', r = 5, expected = 0.7573593128807143, chords = 4
+
+    @pytest.mark.parametrize('chords', [4, 8, 16])
+    @pytest.mark.parametrize('kind,r,expected', [
+        ('fs', 6, 2.000), ('fs', 10, 2.000),
+        ('sf', 3, g2(3)), ('sf', 5, g2(5)), ('sf', 6, g2(6)), ('sf', 2, 2.000),
+    ])
+    def test_pt2_corner_wall(kind, r, expected, chords):
+        mesh = (synth.fs_box if kind == 'fs' else synth.sf_box)(r, chords=chords)
+>       m = corner_wall(mesh, z=15.0)
+
+tests/test_measure.py:53: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+tris = array([[[ 4.00000000e+01,  2.50000000e+01,  0.00000000e+00],
+        [ 3.96193977e+01,  2.69134172e+01,  0.00000000e+0...    [ 3.80000000e+01,  2.80000000e+01,  2.00000000e+00],
+        [ 0.00000000e+00,  0.00000000e+00,  2.00000000e+00]]])
+z = 15.0
+
+    def corner_wall(tris, z=15.0):
+>       raise NotImplementedError
+E       NotImplementedError
+
+tests/measure_box.py:21: NotImplementedError
+_______________ test_pt2_corner_wall[sf-5-0.7573593128807143-8] ________________
+
+kind = 'sf', r = 5, expected = 0.7573593128807143, chords = 8
+
+    @pytest.mark.parametrize('chords', [4, 8, 16])
+    @pytest.mark.parametrize('kind,r,expected', [
+        ('fs', 6, 2.000), ('fs', 10, 2.000),
+        ('sf', 3, g2(3)), ('sf', 5, g2(5)), ('sf', 6, g2(6)), ('sf', 2, 2.000),
+    ])
+    def test_pt2_corner_wall(kind, r, expected, chords):
+        mesh = (synth.fs_box if kind == 'fs' else synth.sf_box)(r, chords=chords)
+>       m = corner_wall(mesh, z=15.0)
+
+tests/test_measure.py:53: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+tris = array([[[ 4.00000000e+01,  2.50000000e+01,  0.00000000e+00],
+        [ 3.99039264e+01,  2.59754516e+01,  0.00000000e+0...    [ 3.80000000e+01,  2.80000000e+01,  2.00000000e+00],
+        [ 0.00000000e+00,  0.00000000e+00,  2.00000000e+00]]])
+z = 15.0
+
+    def corner_wall(tris, z=15.0):
+>       raise NotImplementedError
+E       NotImplementedError
+
+tests/measure_box.py:21: NotImplementedError
+_______________ test_pt2_corner_wall[sf-5-0.7573593128807143-16] _______________
+
+kind = 'sf', r = 5, expected = 0.7573593128807143, chords = 16
+
+    @pytest.mark.parametrize('chords', [4, 8, 16])
+    @pytest.mark.parametrize('kind,r,expected', [
+        ('fs', 6, 2.000), ('fs', 10, 2.000),
+        ('sf', 3, g2(3)), ('sf', 5, g2(5)), ('sf', 6, g2(6)), ('sf', 2, 2.000),
+    ])
+    def test_pt2_corner_wall(kind, r, expected, chords):
+        mesh = (synth.fs_box if kind == 'fs' else synth.sf_box)(r, chords=chords)
+>       m = corner_wall(mesh, z=15.0)
+
+tests/test_measure.py:53: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+tris = array([[[ 4.00000000e+01,  2.50000000e+01,  0.00000000e+00],
+        [ 3.99759236e+01,  2.54900857e+01,  0.00000000e+0...    [ 3.80000000e+01,  2.80000000e+01,  2.00000000e+00],
+        [ 0.00000000e+00,  0.00000000e+00,  2.00000000e+00]]])
+z = 15.0
+
+    def corner_wall(tris, z=15.0):
+>       raise NotImplementedError
+E       NotImplementedError
+
+tests/measure_box.py:21: NotImplementedError
+_______________ test_pt2_corner_wall[sf-6-0.3431457505076194-4] ________________
+
+kind = 'sf', r = 6, expected = 0.3431457505076194, chords = 4
+
+    @pytest.mark.parametrize('chords', [4, 8, 16])
+    @pytest.mark.parametrize('kind,r,expected', [
+        ('fs', 6, 2.000), ('fs', 10, 2.000),
+        ('sf', 3, g2(3)), ('sf', 5, g2(5)), ('sf', 6, g2(6)), ('sf', 2, 2.000),
+    ])
+    def test_pt2_corner_wall(kind, r, expected, chords):
+        mesh = (synth.fs_box if kind == 'fs' else synth.sf_box)(r, chords=chords)
+>       m = corner_wall(mesh, z=15.0)
+
+tests/test_measure.py:53: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+tris = array([[[ 4.00000000e+01,  2.40000000e+01,  0.00000000e+00],
+        [ 3.95432772e+01,  2.62961006e+01,  0.00000000e+0...    [ 3.80000000e+01,  2.80000000e+01,  2.00000000e+00],
+        [ 0.00000000e+00,  0.00000000e+00,  2.00000000e+00]]])
+z = 15.0
+
+    def corner_wall(tris, z=15.0):
+>       raise NotImplementedError
+E       NotImplementedError
+
+tests/measure_box.py:21: NotImplementedError
+_______________ test_pt2_corner_wall[sf-6-0.3431457505076194-8] ________________
+
+kind = 'sf', r = 6, expected = 0.3431457505076194, chords = 8
+
+    @pytest.mark.parametrize('chords', [4, 8, 16])
+    @pytest.mark.parametrize('kind,r,expected', [
+        ('fs', 6, 2.000), ('fs', 10, 2.000),
+        ('sf', 3, g2(3)), ('sf', 5, g2(5)), ('sf', 6, g2(6)), ('sf', 2, 2.000),
+    ])
+    def test_pt2_corner_wall(kind, r, expected, chords):
+        mesh = (synth.fs_box if kind == 'fs' else synth.sf_box)(r, chords=chords)
+>       m = corner_wall(mesh, z=15.0)
+
+tests/test_measure.py:53: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+tris = array([[[ 4.00000000e+01,  2.40000000e+01,  0.00000000e+00],
+        [ 3.98847117e+01,  2.51705419e+01,  0.00000000e+0...    [ 3.80000000e+01,  2.80000000e+01,  2.00000000e+00],
+        [ 0.00000000e+00,  0.00000000e+00,  2.00000000e+00]]])
+z = 15.0
+
+    def corner_wall(tris, z=15.0):
+>       raise NotImplementedError
+E       NotImplementedError
+
+tests/measure_box.py:21: NotImplementedError
+_______________ test_pt2_corner_wall[sf-6-0.3431457505076194-16] _______________
+
+kind = 'sf', r = 6, expected = 0.3431457505076194, chords = 16
+
+    @pytest.mark.parametrize('chords', [4, 8, 16])
+    @pytest.mark.parametrize('kind,r,expected', [
+        ('fs', 6, 2.000), ('fs', 10, 2.000),
+        ('sf', 3, g2(3)), ('sf', 5, g2(5)), ('sf', 6, g2(6)), ('sf', 2, 2.000),
+    ])
+    def test_pt2_corner_wall(kind, r, expected, chords):
+        mesh = (synth.fs_box if kind == 'fs' else synth.sf_box)(r, chords=chords)
+>       m = corner_wall(mesh, z=15.0)
+
+tests/test_measure.py:53: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+tris = array([[[ 4.00000000e+01,  2.40000000e+01,  0.00000000e+00],
+        [ 3.99711084e+01,  2.45881028e+01,  0.00000000e+0...    [ 3.80000000e+01,  2.80000000e+01,  2.00000000e+00],
+        [ 0.00000000e+00,  0.00000000e+00,  2.00000000e+00]]])
+z = 15.0
+
+    def corner_wall(tris, z=15.0):
+>       raise NotImplementedError
+E       NotImplementedError
+
+tests/measure_box.py:21: NotImplementedError
+_______________________ test_pt2_corner_wall[sf-2-2.0-4] _______________________
+
+kind = 'sf', r = 2, expected = 2.0, chords = 4
+
+    @pytest.mark.parametrize('chords', [4, 8, 16])
+    @pytest.mark.parametrize('kind,r,expected', [
+        ('fs', 6, 2.000), ('fs', 10, 2.000),
+        ('sf', 3, g2(3)), ('sf', 5, g2(5)), ('sf', 6, g2(6)), ('sf', 2, 2.000),
+    ])
+    def test_pt2_corner_wall(kind, r, expected, chords):
+        mesh = (synth.fs_box if kind == 'fs' else synth.sf_box)(r, chords=chords)
+>       m = corner_wall(mesh, z=15.0)
+
+tests/test_measure.py:53: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+tris = array([[[ 4.00000000e+01,  2.80000000e+01,  0.00000000e+00],
+        [ 3.98477591e+01,  2.87653669e+01,  0.00000000e+0...    [ 3.80000000e+01,  2.80000000e+01,  2.00000000e+00],
+        [ 0.00000000e+00,  0.00000000e+00,  2.00000000e+00]]])
+z = 15.0
+
+    def corner_wall(tris, z=15.0):
+>       raise NotImplementedError
+E       NotImplementedError
+
+tests/measure_box.py:21: NotImplementedError
+_______________________ test_pt2_corner_wall[sf-2-2.0-8] _______________________
+
+kind = 'sf', r = 2, expected = 2.0, chords = 8
+
+    @pytest.mark.parametrize('chords', [4, 8, 16])
+    @pytest.mark.parametrize('kind,r,expected', [
+        ('fs', 6, 2.000), ('fs', 10, 2.000),
+        ('sf', 3, g2(3)), ('sf', 5, g2(5)), ('sf', 6, g2(6)), ('sf', 2, 2.000),
+    ])
+    def test_pt2_corner_wall(kind, r, expected, chords):
+        mesh = (synth.fs_box if kind == 'fs' else synth.sf_box)(r, chords=chords)
+>       m = corner_wall(mesh, z=15.0)
+
+tests/test_measure.py:53: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+tris = array([[[ 4.00000000e+01,  2.80000000e+01,  0.00000000e+00],
+        [ 3.99615706e+01,  2.83901806e+01,  0.00000000e+0...    [ 3.80000000e+01,  2.80000000e+01,  2.00000000e+00],
+        [ 0.00000000e+00,  0.00000000e+00,  2.00000000e+00]]])
+z = 15.0
+
+    def corner_wall(tris, z=15.0):
+>       raise NotImplementedError
+E       NotImplementedError
+
+tests/measure_box.py:21: NotImplementedError
+______________________ test_pt2_corner_wall[sf-2-2.0-16] _______________________
+
+kind = 'sf', r = 2, expected = 2.0, chords = 16
+
+    @pytest.mark.parametrize('chords', [4, 8, 16])
+    @pytest.mark.parametrize('kind,r,expected', [
+        ('fs', 6, 2.000), ('fs', 10, 2.000),
+        ('sf', 3, g2(3)), ('sf', 5, g2(5)), ('sf', 6, g2(6)), ('sf', 2, 2.000),
+    ])
+    def test_pt2_corner_wall(kind, r, expected, chords):
+        mesh = (synth.fs_box if kind == 'fs' else synth.sf_box)(r, chords=chords)
+>       m = corner_wall(mesh, z=15.0)
+
+tests/test_measure.py:53: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+tris = array([[[ 4.00000000e+01,  2.80000000e+01,  0.00000000e+00],
+        [ 3.99903695e+01,  2.81960343e+01,  0.00000000e+0...    [ 3.80000000e+01,  2.80000000e+01,  2.00000000e+00],
+        [ 0.00000000e+00,  0.00000000e+00,  2.00000000e+00]]])
+z = 15.0
+
+    def corner_wall(tris, z=15.0):
+>       raise NotImplementedError
+E       NotImplementedError
+
+tests/measure_box.py:21: NotImplementedError
+_____________________ test_pt2_breached_wall_fails_loudly ______________________
+
+    def test_pt2_breached_wall_fails_loudly():
+>       m = corner_wall(synth.breached_walls(), z=15.0)
+
+tests/test_measure.py:71: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+tris = array([[[-37.,  28.,   0.],
+        [ 37.,  28.,   0.],
+        [ 37.,  28.,  30.]],
+
+       [[-37.,  28.,   0.],
+    ....],
+        [-40., -27.,  30.]],
+
+       [[-39.,   0.,   0.],
+        [-40., -27.,   0.],
+        [-40.,  27.,   0.]]])
+z = 15.0
+
+    def corner_wall(tris, z=15.0):
+>       raise NotImplementedError
+E       NotImplementedError
+
+tests/measure_box.py:21: NotImplementedError
+____________________ test_pt2_reads_a_binary_stl_round_trip ____________________
+
+    def test_pt2_reads_a_binary_stl_round_trip():
+        mesh = synth.sf_box(6, chords=8)
+        with tempfile.TemporaryDirectory() as d:
+            p = os.path.join(d, 'b.stl')
+            synth.write_stl(p, mesh)
+>           back = read_stl(p)
+
+tests/test_measure.py:81: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+path = '/tmp/tmpbkdow1yc/b.stl'
+
+    def read_stl(path):
+>       raise NotImplementedError
+E       NotImplementedError
+
+tests/measure_box.py:5: NotImplementedError
+____________________________ test_pt3_script_format ____________________________
+
+    def test_pt3_script_format():
+        for p in (A, B):
+>           obj = load(p)
+
+tests/test_steps_format.py:24: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+p = '/work/tests/../steps/shell-then-fillet.json'
+
+    def load(p):
+>       with open(p, encoding='utf-8') as f:
+E       FileNotFoundError: [Errno 2] No such file or directory: '/work/tests/../steps/shell-then-fillet.json'
+
+tests/test_steps_format.py:18: FileNotFoundError
+______________________ test_pt3_same_commands_two_swapped ______________________
+
+    def test_pt3_same_commands_two_swapped():
+>       a, b = load(A)['commands'], load(B)['commands']
+
+tests/test_steps_format.py:31: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+p = '/work/tests/../steps/shell-then-fillet.json'
+
+    def load(p):
+>       with open(p, encoding='utf-8') as f:
+E       FileNotFoundError: [Errno 2] No such file or directory: '/work/tests/../steps/shell-then-fillet.json'
+
+tests/test_steps_format.py:18: FileNotFoundError
+__________________________ test_pt3_the_hero_numbers ___________________________
+
+    def test_pt3_the_hero_numbers():
+>       b = load(B)['commands']
+
+tests/test_steps_format.py:40: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+p = '/work/tests/../steps/fillet-then-shell.json'
+
+    def load(p):
+>       with open(p, encoding='utf-8') as f:
+E       FileNotFoundError: [Errno 2] No such file or directory: '/work/tests/../steps/fillet-then-shell.json'
+
+tests/test_steps_format.py:18: FileNotFoundError
+_____________________________ test_pt3_card_budget _____________________________
+
+    def test_pt3_card_budget():
+>       la, lb = lines(A), lines(B)
+
+tests/test_steps_format.py:50: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+p = '/work/tests/../steps/shell-then-fillet.json'
+
+    def lines(p):
+>       with open(p, encoding='utf-8') as f:
+E       FileNotFoundError: [Errno 2] No such file or directory: '/work/tests/../steps/shell-then-fillet.json'
+
+tests/test_steps_format.py:13: FileNotFoundError
+=========================== short test summary info ============================
+FAILED tests/test_measure.py::test_pt1_shelled_volume_matches_fs_mesh[1] - No...
+FAILED tests/test_measure.py::test_pt1_shelled_volume_matches_fs_mesh[2] - No...
+FAILED tests/test_measure.py::test_pt1_shelled_volume_matches_fs_mesh[6] - No...
+FAILED tests/test_measure.py::test_pt1_shelled_volume_matches_fs_mesh[10] - N...
+FAILED tests/test_measure.py::test_pt1_shelled_volume_matches_fs_mesh[25] - N...
+FAILED tests/test_measure.py::test_pt1_sf_volume_matches_sf_mesh[2] - NotImpl...
+FAILED tests/test_measure.py::test_pt1_sf_volume_matches_sf_mesh[4] - NotImpl...
+FAILED tests/test_measure.py::test_pt1_sf_volume_matches_sf_mesh[5] - NotImpl...
+FAILED tests/test_measure.py::test_pt1_sf_volume_matches_sf_mesh[6] - NotImpl...
+FAILED tests/test_measure.py::test_pt1_sf_volume_matches_sf_mesh[6.5] - NotIm...
+FAILED tests/test_measure.py::test_pt1_known_values - NotImplementedError
+FAILED tests/test_measure.py::test_pt1_sf_volume_refuses_a_breached_radius - ...
+FAILED tests/test_measure.py::test_pt2_corner_wall[fs-6-2.0-4] - NotImplement...
+FAILED tests/test_measure.py::test_pt2_corner_wall[fs-6-2.0-8] - NotImplement...
+FAILED tests/test_measure.py::test_pt2_corner_wall[fs-6-2.0-16] - NotImplemen...
+FAILED tests/test_measure.py::test_pt2_corner_wall[fs-10-2.0-4] - NotImplemen...
+FAILED tests/test_measure.py::test_pt2_corner_wall[fs-10-2.0-8] - NotImplemen...
+FAILED tests/test_measure.py::test_pt2_corner_wall[fs-10-2.0-16] - NotImpleme...
+FAILED tests/test_measure.py::test_pt2_corner_wall[sf-3-1.5857864376269049-4]
+FAILED tests/test_measure.py::test_pt2_corner_wall[sf-3-1.5857864376269049-8]
+FAILED tests/test_measure.py::test_pt2_corner_wall[sf-3-1.5857864376269049-16]
+FAILED tests/test_measure.py::test_pt2_corner_wall[sf-5-0.7573593128807143-4]
+FAILED tests/test_measure.py::test_pt2_corner_wall[sf-5-0.7573593128807143-8]
+FAILED tests/test_measure.py::test_pt2_corner_wall[sf-5-0.7573593128807143-16]
+FAILED tests/test_measure.py::test_pt2_corner_wall[sf-6-0.3431457505076194-4]
+FAILED tests/test_measure.py::test_pt2_corner_wall[sf-6-0.3431457505076194-8]
+FAILED tests/test_measure.py::test_pt2_corner_wall[sf-6-0.3431457505076194-16]
+FAILED tests/test_measure.py::test_pt2_corner_wall[sf-2-2.0-4] - NotImplement...
+FAILED tests/test_measure.py::test_pt2_corner_wall[sf-2-2.0-8] - NotImplement...
+FAILED tests/test_measure.py::test_pt2_corner_wall[sf-2-2.0-16] - NotImplemen...
+FAILED tests/test_measure.py::test_pt2_breached_wall_fails_loudly - NotImplem...
+FAILED tests/test_measure.py::test_pt2_reads_a_binary_stl_round_trip - NotImp...
+FAILED tests/test_steps_format.py::test_pt3_script_format - FileNotFoundError...
+FAILED tests/test_steps_format.py::test_pt3_same_commands_two_swapped - FileN...
+FAILED tests/test_steps_format.py::test_pt3_the_hero_numbers - FileNotFoundEr...
+FAILED tests/test_steps_format.py::test_pt3_card_budget - FileNotFoundError: ...
+ERROR tests/test_client_timeout.py
+36 failed, 1 passed, 1 error in 0.70s

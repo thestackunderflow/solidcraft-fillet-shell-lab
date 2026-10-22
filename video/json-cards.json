@@ -1,0 +1,44 @@
+[
+ {
+  "id": "json-2-wall",
+  "src": "out/set_parameter/transcript.jsonl#L6",
+  "source_kind": "no-AI test",
+  "view": {
+   "reformat": "pretty",
+   "at": "/msg/params/arguments",
+   "cols": 44
+  },
+  "focusKey": "/msg/params/arguments/value",
+  "focusValue": 2,
+  "spoken": "value, two"
+ },
+ {
+  "id": "json-1a-shell",
+  "src": "out/steps/batch-shell-then-fillet.jsonl#L6",
+  "source_kind": "no-AI test",
+  "view": {
+   "reformat": "pretty",
+   "at": "/msg/params/arguments/commands",
+   "items": [
+    4,
+    4
+   ],
+   "cols": 44
+  },
+  "mark": "solid.shell"
+ },
+ {
+  "id": "json-1b-fillet",
+  "src": "out/steps/batch-shell-then-fillet.jsonl#L6",
+  "source_kind": "no-AI test",
+  "view": {
+   "reformat": "pretty",
+   "at": "/msg/params/arguments/commands/5/params",
+   "cols": 44
+  },
+  "note": "the whole step (items [5, 5]) is 14 rows at 44 cols: the card shows its params; the path row names step 5",
+  "focusKey": "/msg/params/arguments/commands/5/params/radius",
+  "focusValue": 10,
+  "spoken": "radius, ten"
+ }
+]

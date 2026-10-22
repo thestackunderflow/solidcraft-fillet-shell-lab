@@ -1,0 +1,23 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-7.4.4, pluggy-1.4.0 -- /usr/bin/python3
+rootdir: /work
+collecting ... collected 16 items
+
+tests/test_probe_cells.py::test_version_is_pinned PASSED                 [  6%]
+tests/test_probe_cells.py::test_fs10_builds_with_a_2_mm_wall PASSED      [ 12%]
+tests/test_probe_cells.py::test_sf10_is_refused_and_rolled_back PASSED   [ 18%]
+tests/test_probe_cells.py::test_sf6_builds_a_third_of_a_millimetre_corner_with_no_warning PASSED [ 25%]
+tests/test_probe_cells.py::test_the_offered_radius_leaves_almost_no_corner PASSED [ 31%]
+tests/test_probe_cells.py::test_live_equals_the_committed_probe_record[FS-10-1-FS-10] PASSED [ 37%]
+tests/test_probe_cells.py::test_live_equals_the_committed_probe_record[SF-10-1-SF-10] PASSED [ 43%]
+tests/test_probe_cells.py::test_live_equals_the_committed_probe_record[SF-6-1-SF-6] PASSED [ 50%]
+tests/test_probe_cells.py::test_live_equals_the_committed_probe_record[SF-offered-1-SF-6.82] PASSED [ 56%]
+tests/test_steps_files.py::test_the_file_is_exactly_the_batch_arguments[shell-then-fillet] PASSED [ 62%]
+tests/test_steps_files.py::test_the_file_is_exactly_the_batch_arguments[fillet-then-shell] PASSED [ 68%]
+tests/test_steps_files.py::test_shell_first_is_refused_at_the_fillet PASSED [ 75%]
+tests/test_steps_files.py::test_fillet_first_builds PASSED               [ 81%]
+tests/test_steps_files.py::test_cli_run_refuses_the_shell_first_file_and_writes_nothing PASSED [ 87%]
+tests/test_steps_files.py::test_cli_run_builds_the_fillet_first_file PASSED [ 93%]
+tests/test_set_parameter.py::test_set_parameter_wall PASSED              [100%]
+
+============================== 16 passed in 5.66s ==============================

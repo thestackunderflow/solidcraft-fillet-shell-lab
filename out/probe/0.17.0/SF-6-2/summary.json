@@ -1,0 +1,243 @@
+{
+ "cell": "SF-6",
+ "order": "SF",
+ "R": 6,
+ "rep": 2,
+ "version": "0.17.0",
+ "batch1": {
+  "isError": false,
+  "ok": true
+ },
+ "stage1_md5": "47adb3c26664d6e9ddab24ccfd53317c",
+ "batch2": {
+  "isError": false,
+  "ok": true,
+  "completed": 1,
+  "failed": null,
+  "rolled_back": null,
+  "undone": null,
+  "result_keys": [
+   "bodies",
+   "changed_bodies",
+   "created_bodies",
+   "feature",
+   "ms",
+   "name",
+   "removed_bodies",
+   "warning"
+  ],
+  "warning": null
+ },
+ "timeline_before": [
+  {
+   "name": "Sketch1",
+   "type": "Sketch",
+   "error": null,
+   "warning": null,
+   "suppressed": false,
+   "rolled_back": false
+  },
+  {
+   "name": "Extrude1",
+   "type": "ExtrudeFeature",
+   "error": null,
+   "warning": null,
+   "suppressed": false,
+   "rolled_back": false
+  },
+  {
+   "name": "Shell1",
+   "type": "ShellFeature",
+   "error": null,
+   "warning": null,
+   "suppressed": false,
+   "rolled_back": false
+  }
+ ],
+ "timeline_after": [
+  {
+   "name": "Sketch1",
+   "type": "Sketch",
+   "error": null,
+   "warning": null,
+   "suppressed": false,
+   "rolled_back": false
+  },
+  {
+   "name": "Extrude1",
+   "type": "ExtrudeFeature",
+   "error": null,
+   "warning": null,
+   "suppressed": false,
+   "rolled_back": false
+  },
+  {
+   "name": "Shell1",
+   "type": "ShellFeature",
+   "error": null,
+   "warning": null,
+   "suppressed": false,
+   "rolled_back": false
+  },
+  {
+   "name": "Fillet1",
+   "type": "FilletFeature",
+   "error": null,
+   "warning": null,
+   "suppressed": false,
+   "rolled_back": false
+  }
+ ],
+ "timeline_unchanged": false,
+ "sc_volume_mm3": 23904.31214993155,
+ "final_md5": "a9a337e3f2ecd664d0aee1f597680be1",
+ "export": {
+  "isError": false
+ },
+ "stl": {
+  "size": [
+   80.0,
+   60.0,
+   30.0
+  ],
+  "volume_mm3": 23899.438,
+  "wall_status": "OK",
+  "wall_mm": 0.3431,
+  "corner_r_fit": [
+   6.0,
+   6.0,
+   6.0,
+   6.0
+  ],
+  "raw_polyline_mm": [
+   0.3427,
+   0.3427,
+   0.3427,
+   0.3427
+  ],
+  "sagitta_mm": [
+   0.008,
+   0.008,
+   0.008,
+   0.008
+  ]
+ },
+ "sc_wall": {
+  "cylinder_radii": [
+   6.0
+  ],
+  "outer_face_radius": 6.000000000000022,
+  "items": [
+   {
+    "type": "face",
+    "body": "Body1",
+    "index": 11,
+    "point": [
+     34.54743659785501,
+     29.974973905493556,
+     12.862961532083997
+    ]
+   },
+   {
+    "type": "edge",
+    "body": "Body1",
+    "index": 17,
+    "point": [
+     38.0,
+     28.0,
+     16.0
+    ]
+   }
+  ],
+  "reply": {
+   "center_delta": [
+    4.000000000000014,
+    4.000000000000021,
+    0.0
+   ],
+   "center_distance": 5.6568542494924055,
+   "center_from": [
+    33.999999999999986,
+    23.99999999999998,
+    15.000000000000004
+   ],
+   "center_to": [
+    38.0,
+    28.0,
+    15.000000000000004
+   ],
+   "delta": [
+    -0.2649260699939546,
+    -0.21520669431485473,
+    0.0
+   ],
+   "distance_mm": 0.3413205880698805,
+   "from": [
+    38.264926069993955,
+    28.215206694314855,
+    22.125
+   ],
+   "items": [
+    {
+     "angle_deg": 89.99999999999969,
+     "arc_length": 9.424777960769383,
+     "area_mm2": 282.28658184243596,
+     "axis": [
+      0.0,
+      0.0,
+      -1.0
+     ],
+     "center": [
+      33.999999999999986,
+      23.99999999999998,
+      15.000000000000004
+     ],
+     "diameter": 12.000000000000044,
+     "planar": false,
+     "radius": 6.000000000000022,
+     "round": "cylinder",
+     "type": "face"
+    },
+    {
+     "length_mm": 28.0,
+     "type": "edge"
+    }
+   ],
+   "max": 30.33150177620621,
+   "max_delta": [
+    -2.0,
+    4.0000000000000036,
+    30.000000000000007
+   ],
+   "max_from": [
+    40.0,
+    23.999999999999996,
+    -7.105427357601002e-15
+   ],
+   "max_to": [
+    38.0,
+    28.0,
+    30.0
+   ],
+   "measure": "center",
+   "min": 0.3413205880698805,
+   "to": [
+    38.0,
+    28.0,
+    22.125
+   ]
+  },
+  "min_mm": 0.3413205880698805,
+  "radius_minus_axis_mm": 0.34314575050761675,
+  "sc_radii": [
+   6.000000000000022,
+   0.0
+  ],
+  "center_distance": 5.6568542494924055
+ },
+ "expected_volume": 23904.92,
+ "expected_wall": 0.3431,
+ "stl_vs_expected_pct": -0.0229,
+ "sc_vs_expected_pct": -0.0025,
+ "wall_s": 0.37
+}

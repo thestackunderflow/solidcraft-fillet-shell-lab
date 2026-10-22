@@ -1,0 +1,321 @@
+{
+ "runs": [
+  {
+   "run": "named-1",
+   "arm": "named",
+   "exit": 0,
+   "wall_s": 22,
+   "model": "claude-sonnet-5-5",
+   "claude_version": "2.1.303 (Claude Code)",
+   "cost_usd": 0.0395349,
+   "cost_kind": "logged",
+   "turns": 8,
+   "tool_calls": 7,
+   "tools": [
+    "list_commands",
+    "new_design",
+    "batch",
+    "body_topology",
+    "batch",
+    "export",
+    "measure"
+   ],
+   "failed_calls": [],
+   "refusals": 0,
+   "refusal_errors": [],
+   "first_attempt_order": "FS",
+   "final_order": "FS",
+   "recovery": null,
+   "final_fillet_radius": 10,
+   "final_fillet_fit": null,
+   "hang": false,
+   "part": {
+    "size": [
+     80.0,
+     60.0,
+     30.0
+    ],
+    "volume_mm3": 23788.912,
+    "expected_volume_mm3": 23795.04,
+    "volume_vs_expected_pct": -0.0258,
+    "wall_status": "OK",
+    "wall_mm": 2.0,
+    "corner_r_fit": [
+     10.0,
+     10.0,
+     10.0,
+     10.0
+    ],
+    "size_ok": true,
+    "volume_ok": true,
+    "wall_ok": true,
+    "pass": true
+   },
+   "scored": "pass",
+   "final_text": "The open-top box is built and exported to `/lab/out/box.stl` (binary STL, 117,884 bytes). No step failed.\n\n- **Order:** I made an 80 × 60 × 30 mm box, rounded the four vertical outside corners to 10 mm, then shelled it. The shell was 2 mm inward with the top face removed.\n- **Bounding box:** X 0 to 80, Y 0 to 60, Z 0 to 30 mm. The measured values differ from these only by floating-point noise (about 1e-14).\n- **Volume:** 23,795 mm³.\n- **Other measurements:** surface area is 24,321 mm², and the body is one solid with 19 faces. The tool's default material would put it at about 30.7 g.\n\nI didn't render the result or check the wall thickness by measuring. Fillet1 and Shell1 both ran without warnings, and the 19 faces include 8 cylindrical ones, which fits four outer and four inner rounded corners."
+  },
+  {
+   "run": "named-2",
+   "arm": "named",
+   "exit": 0,
+   "wall_s": 31,
+   "model": "claude-sonnet-5-5",
+   "claude_version": "2.1.303 (Claude Code)",
+   "cost_usd": 0.0327855,
+   "cost_kind": "logged",
+   "turns": 8,
+   "tool_calls": 7,
+   "tools": [
+    "new_design",
+    "list_commands",
+    "batch",
+    "body_topology",
+    "batch",
+    "export",
+    "measure"
+   ],
+   "failed_calls": [],
+   "refusals": 0,
+   "refusal_errors": [],
+   "first_attempt_order": "FS",
+   "final_order": "FS",
+   "recovery": null,
+   "final_fillet_radius": 10,
+   "final_fillet_fit": null,
+   "hang": false,
+   "part": {
+    "size": [
+     80.0,
+     60.0,
+     30.0
+    ],
+    "volume_mm3": 23788.912,
+    "expected_volume_mm3": 23795.04,
+    "volume_vs_expected_pct": -0.0258,
+    "wall_status": "OK",
+    "wall_mm": 2.0,
+    "corner_r_fit": [
+     10.0,
+     10.0,
+     10.0,
+     10.0
+    ],
+    "size_ok": true,
+    "volume_ok": true,
+    "wall_ok": true,
+    "pass": true
+   },
+   "scored": "pass",
+   "final_text": "The open-top box is built and exported to `/lab/out/box.stl` (117,884 bytes, binary STL). No step failed.\n\nI made an 80 × 60 × 30 mm box and rounded the four vertical outside edges to a 10 mm radius. Then I shelled it inward by 2 mm with the top face removed, so the corners were rounded before the hollowing, as you asked.\n\n- **Bounding box:** X 0 to 80, Y 0 to 60, Z 0 to 30 mm. The tiny offsets in the raw measurement (about 1e-14) are floating-point noise.\n- **Volume:** about 23,795 mm³ (about 23.8 cm³).\n- **Surface area:** about 24,321 mm².\n\nI did not render the part or check the wall thickness after the shell. I also didn't read the STL back after export; the file size and the body measurements are all I checked."
+  },
+  {
+   "run": "named-3",
+   "arm": "named",
+   "exit": 0,
+   "wall_s": 22,
+   "model": "claude-sonnet-5-5",
+   "claude_version": "2.1.303 (Claude Code)",
+   "cost_usd": 0.035574499999999995,
+   "cost_kind": "logged",
+   "turns": 6,
+   "tool_calls": 5,
+   "tools": [
+    "list_commands",
+    "describe_command",
+    "batch",
+    "measure",
+    "export"
+   ],
+   "failed_calls": [],
+   "refusals": 0,
+   "refusal_errors": [],
+   "first_attempt_order": "FS",
+   "final_order": "FS",
+   "recovery": null,
+   "final_fillet_radius": 10,
+   "final_fillet_fit": null,
+   "hang": false,
+   "part": {
+    "size": [
+     80.0,
+     60.0,
+     30.0
+    ],
+    "volume_mm3": 23788.912,
+    "expected_volume_mm3": 23795.04,
+    "volume_vs_expected_pct": -0.0258,
+    "wall_status": "OK",
+    "wall_mm": 2.0,
+    "corner_r_fit": [
+     10.0,
+     10.0,
+     10.0,
+     10.0
+    ],
+    "size_ok": true,
+    "volume_ok": true,
+    "wall_ok": true,
+    "pass": true
+   },
+   "scored": "pass",
+   "final_text": "The open-top box is built and exported to `/lab/out/box.stl` (binary STL, 117,884 bytes). No step failed, and none returned a warning.\n\nI made the box, rounded the four vertical corners to a 10 mm radius, then hollowed it out. The hollowing removed the top face and left 2 mm walls and floor.\n\n- **Bounding box:** X 0 to 80, Y 0 to 60, Z 0 to 30 mm. That matches the 80 × 60 × 30 you asked for, apart from floating-point noise of about 1e-14.\n- **Volume:** 23,795.1 mm³. The surface area is 24,320.5 mm².\n- **Mass:** 30.7 g, at the default material density of 1.29 g/cm³.\n\nI didn't check the wall thickness separately, and I didn't open the exported STL to inspect it. I only confirmed that the export reported success."
+  },
+  {
+   "run": "plain-1",
+   "arm": "plain",
+   "exit": 0,
+   "wall_s": 16,
+   "model": "claude-sonnet-5-5",
+   "claude_version": "2.1.303 (Claude Code)",
+   "cost_usd": 0.05622150000000001,
+   "cost_kind": "logged",
+   "turns": 6,
+   "tool_calls": 5,
+   "tools": [
+    "list_commands",
+    "list_commands",
+    "batch",
+    "measure",
+    "export"
+   ],
+   "failed_calls": [],
+   "refusals": 0,
+   "refusal_errors": [],
+   "first_attempt_order": "FS",
+   "final_order": "FS",
+   "recovery": null,
+   "final_fillet_radius": 10,
+   "final_fillet_fit": null,
+   "hang": false,
+   "part": {
+    "size": [
+     80.0,
+     60.0,
+     30.0
+    ],
+    "volume_mm3": 23788.912,
+    "expected_volume_mm3": 23795.04,
+    "volume_vs_expected_pct": -0.0258,
+    "wall_status": "OK",
+    "wall_mm": 2.0,
+    "corner_r_fit": [
+     10.0,
+     10.0,
+     10.0,
+     10.0
+    ],
+    "size_ok": true,
+    "volume_ok": true,
+    "wall_ok": true,
+    "pass": true
+   },
+   "scored": "pass",
+   "final_text": "The open-top box is built and exported to `/lab/out/box.stl` (117,884 bytes, binary STL). No step failed.\n\nI made an 80 × 60 × 30 mm box and rounded its four vertical edges to a 10 mm radius. Then I shelled it inward 2 mm, removing the top face so the walls and floor are 2 mm thick.\n\n- **Bounding box:** X 0 to 80, Y 0 to 60, Z 0 to 30 mm. This matches the requested size, apart from floating-point noise of about 1e-14.\n- **Volume:** 23,795.1 mm³, with a surface area of 24,320.5 mm².\n- **Mass:** about 30.7 g at the default 1.29 g/cm³ density.\n\nThe body has 19 faces: 11 planar and 8 cylindrical. The cylindrical faces are the four outer corners plus the four inner ones.\n\nI checked the numbers with a measurement of the body but didn't look at a render, and I didn't open the STL file afterwards."
+  },
+  {
+   "run": "plain-2",
+   "arm": "plain",
+   "exit": 0,
+   "wall_s": 21,
+   "model": "claude-sonnet-5-5",
+   "claude_version": "2.1.303 (Claude Code)",
+   "cost_usd": 0.035227800000000004,
+   "cost_kind": "logged",
+   "turns": 7,
+   "tool_calls": 5,
+   "tools": [
+    "list_commands",
+    "describe_command",
+    "batch",
+    "measure",
+    "export"
+   ],
+   "failed_calls": [],
+   "refusals": 0,
+   "refusal_errors": [],
+   "first_attempt_order": "FS",
+   "final_order": "FS",
+   "recovery": null,
+   "final_fillet_radius": 10,
+   "final_fillet_fit": null,
+   "hang": false,
+   "part": {
+    "size": [
+     80.0,
+     60.0,
+     30.0
+    ],
+    "volume_mm3": 23788.912,
+    "expected_volume_mm3": 23795.04,
+    "volume_vs_expected_pct": -0.0258,
+    "wall_status": "OK",
+    "wall_mm": 2.0,
+    "corner_r_fit": [
+     10.0,
+     10.0,
+     10.0,
+     10.0
+    ],
+    "size_ok": true,
+    "volume_ok": true,
+    "wall_ok": true,
+    "pass": true
+   },
+   "scored": "pass",
+   "final_text": "The open-top box is built and exported to `/lab/out/box.stl` (binary STL, 117,884 bytes). Every modelling step succeeded.\n\nI made an 80 × 60 × 30 mm box, rounded the four vertical edges with a 10 mm radius, then shelled it 2 mm inward with the top face removed. The first attempt failed only because I called a tool name that doesn't exist. I retried with the right tool and nothing in the design failed.\n\n- **Bounding box:** X 0 to 80, Y 0 to 60, Z 0 to 30 mm. This is the expected size, apart from floating-point noise of about 1e-14.\n- **Volume:** 23,795 mm³ (about 30.7 g at the default 1.29 g/cm³).\n- **Surface area:** 24,321 mm².\n- **Faces:** 19, made up of 11 planar and 8 cylindrical.\n\nI didn't check the wall and floor thickness separately, and I didn't look at a render. The volume and face count are what I have to go on."
+  },
+  {
+   "run": "plain-3",
+   "arm": "plain",
+   "exit": 0,
+   "wall_s": 28,
+   "model": "claude-sonnet-5-5",
+   "claude_version": "2.1.303 (Claude Code)",
+   "cost_usd": 0.038344500000000004,
+   "cost_kind": "logged",
+   "turns": 6,
+   "tool_calls": 5,
+   "tools": [
+    "list_commands",
+    "describe_command",
+    "batch",
+    "measure",
+    "export"
+   ],
+   "failed_calls": [],
+   "refusals": 0,
+   "refusal_errors": [],
+   "first_attempt_order": "FS",
+   "final_order": "FS",
+   "recovery": null,
+   "final_fillet_radius": 10,
+   "final_fillet_fit": null,
+   "hang": false,
+   "part": {
+    "size": [
+     80.0,
+     60.0,
+     30.0
+    ],
+    "volume_mm3": 23788.912,
+    "expected_volume_mm3": 23795.04,
+    "volume_vs_expected_pct": -0.0258,
+    "wall_status": "OK",
+    "wall_mm": 2.0,
+    "corner_r_fit": [
+     10.0,
+     10.0,
+     10.0,
+     10.0
+    ],
+    "size_ok": true,
+    "volume_ok": true,
+    "wall_ok": true,
+    "pass": true
+   },
+   "scored": "pass",
+   "final_text": "The open-top box is built and exported to `/lab/out/box.stl` (117,884 bytes, binary STL). No step failed, and none returned a warning.\n\nI made it in three steps:\n1. A box of 80 × 60 × 30 mm.\n2. A 10 mm fillet on the four vertical outside edges.\n3. A 2 mm inward shell with the top face removed, which makes the floor and walls 2 mm thick.\n\n- **Bounding box:** X 0 to 80, Y 0 to 60, Z 0 to 30 mm. The measured values differ from these by about 1e-14, which is floating-point noise.\n- **Volume:** 23,795.1 mm³, which is about 30.7 g at the default 1.29 g/cm³ material density.\n- **Check:** I worked the volume out by hand as the outer rounded block minus the inner pocket. The pocket is 76 × 56 mm with 8 mm corner radii and 28 mm deep. That gives about 23,797 mm³, which matches the model.\n\nI did not open the STL file itself. I only checked the body inside SolidCraft before export."
+  }
+ ],
+ "budget_log_total_usd": 0.2377
+}

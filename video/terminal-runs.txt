@@ -1,0 +1,5 @@
+Claude Code 2.1.303 · claude-sonnet-5-5
+plain prompt: rounded first 3 of 3
+named order:  rounded first 3 of 3
+refused: 0 · parts in spec: 6 of 6
+total cost: $0.24 at API prices

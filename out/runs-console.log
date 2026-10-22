@@ -1,0 +1,18 @@
+=== plain-1 Wed Oct 21 07:00:38 EDT 2026
+{"arm": "plain", "run": "1", "model": "claude-sonnet-5-5", "budget_usd": 1.50, "exit": 0, "hang_killed": 0, "wall_s": 16, "claude_version": "2.1.303 (Claude Code)", "solidcraft": "0.17.0"}
+cost 0.05622150000000001 (logged), running total $0.0562
+=== named-1 Wed Oct 21 07:00:54 EDT 2026
+{"arm": "named", "run": "1", "model": "claude-sonnet-5-5", "budget_usd": 1.50, "exit": 0, "hang_killed": 0, "wall_s": 22, "claude_version": "2.1.303 (Claude Code)", "solidcraft": "0.17.0"}
+cost 0.0395349 (logged), running total $0.0957
+=== plain-2 Wed Oct 21 07:01:16 EDT 2026
+{"arm": "plain", "run": "2", "model": "claude-sonnet-5-5", "budget_usd": 1.50, "exit": 0, "hang_killed": 0, "wall_s": 21, "claude_version": "2.1.303 (Claude Code)", "solidcraft": "0.17.0"}
+cost 0.035227800000000004 (logged), running total $0.1310
+=== named-2 Wed Oct 21 07:01:37 EDT 2026
+{"arm": "named", "run": "2", "model": "claude-sonnet-5-5", "budget_usd": 1.50, "exit": 0, "hang_killed": 0, "wall_s": 31, "claude_version": "2.1.303 (Claude Code)", "solidcraft": "0.17.0"}
+cost 0.0327855 (logged), running total $0.1638
+=== plain-3 Wed Oct 21 07:02:08 EDT 2026
+{"arm": "plain", "run": "3", "model": "claude-sonnet-5-5", "budget_usd": 1.50, "exit": 0, "hang_killed": 0, "wall_s": 28, "claude_version": "2.1.303 (Claude Code)", "solidcraft": "0.17.0"}
+cost 0.038344500000000004 (logged), running total $0.2021
+=== named-3 Wed Oct 21 07:02:36 EDT 2026
+{"arm": "named", "run": "3", "model": "claude-sonnet-5-5", "budget_usd": 1.50, "exit": 0, "hang_killed": 0, "wall_s": 22, "claude_version": "2.1.303 (Claude Code)", "solidcraft": "0.17.0"}
+cost 0.035574499999999995 (logged), running total $0.2377

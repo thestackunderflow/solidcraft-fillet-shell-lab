@@ -1,0 +1,8 @@
+{
+ "content": [
+  {
+   "text": "[\n  {\n    \"disabled_reason\": \"no sketch is being edited (Create Sketch or Edit Sketch first)\",\n    \"enabled\": false,\n    \"icon\": \"ellipse\",\n    \"id\": \"sketch.ellipse\",\n    \"label\": \"Ellipse\",\n    \"panel\": \"CREATE\",\n    \"params\": \"center, major: end of the major axis [x,y], minor: a point the ellipse passes through on the minor side [x,y] | minor_radius. Returns created: {points, curves, constraints, dimensions}: the ids of what it added (stable and never reused: usable right away in sketch.dimension, sketch.constraint.*, sketch.delete\u2026)\",\n    \"shortcut\": null,\n    \"tab\": \"SKETCH\"\n  },\n  {\n    \"disabled_reason\": null,\n    \"enabled\": true,\n    \"icon\": \"lip\",\n    \"id\": \"plastic.lip\",\n    \"label\": \"Lip\",\n    \"panel\": \"CREATE\",\n    \"params\": \"face: [x,y,z] on the rim face of a shelled body; width, height; type?: lip|groove; gap? (groove clearance); side?: inside|outside (which rim edge); body?\",\n    \"shortcut\": null,\n    \"tab\": \"PLASTIC\"\n  }\n]",
+   "type": "text"
+  }
+ ]
+}

@@ -1,0 +1,24 @@
+# Every test runs in a container; nothing is installed on the host. Results: out/.
+# Pinned SolidCraft 0.17.0 (`docker build -t solidcraft-fillet-shell-lab:0.17.0 .`); smoke 0.18.1 with --build-arg SC_VER=0.18.1.
+services:
+  unit-tests:   # PT1-PT4: the measurer on synthetic meshes, the step-file format, the client timeout (no SolidCraft)
+    build: .
+    image: solidcraft-fillet-shell-lab:0.17.0
+    volumes: [".:/work"]
+    working_dir: /work
+    command: ["python3", "-m", "pytest", "-v", "-p", "no:cacheprovider", "tests/test_measure.py", "tests/test_steps_format.py", "tests/test_client_timeout.py", "tests/test_proxy_watchdog.py", "tests/test_score.py"]
+  solidcraft-tests:   # SolidCraft 0.17.0 over MCP, no AI: the probe cells as recorded, the step files, set_parameter
+    image: solidcraft-fillet-shell-lab:0.17.0
+    volumes: [".:/work", "./out/lab-out:/lab/out"]
+    working_dir: /work
+    command: ["python3", "-m", "pytest", "-v", "-p", "no:cacheprovider", "tests/test_probe_cells.py", "tests/test_steps_files.py", "tests/test_set_parameter.py"]
+  evidence:
+    image: solidcraft-fillet-shell-lab:0.17.0
+    volumes: [".:/work"]
+    working_dir: /work
+    command: ["python3", "-m", "pytest", "-v", "-p", "no:cacheprovider", "tests/test_evidence.py"]
+  score:   # scores every agent run in out/runs/
+    image: solidcraft-fillet-shell-lab:0.17.0
+    volumes: [".:/work"]
+    working_dir: /work
+    command: ["python3", "claude-run/score.py"]
